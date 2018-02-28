@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LondonWork EXPERIENCE</title>
+
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css" />
+
+
+    <!-- FONTAWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    
+
+    <script>
+      $( function() {
+    $( "#nacimiento" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  } );
+
+  $( function() {
+    $( "#aproximada" ).datepicker({
+      numberOfMonths: 2,
+      showButtonPanel: false
+    });
+  } );
+  </script>
+    
+  </head>
+  <body>
+
+    <header>
+
+      <div class="upper-head">
+  
+        <div class="left-head">
+          
+  
+          <div class="contact">
+              <img src="img/auricular-phone-symbol-in-a-circle.png" alt="Trabaja en londres">
+              <div>
+                <p>Tel&#233;fono gratuito <strong>900 831 750</strong></p>
+              </div>
+  
+                <img src="img/email.png" alt="Trabaja en londres">
+              <div>
+                <p>Envianos un e-mail a: <strong><a href="mailto:info@londonworkexperience.com">info@londonworkexperience.com</a></strong></p>
+            </div>
+          </div>
+         
+          <div class="social">
+            
+          </div>
+        </div>
+  
+        <div class="right-head">
+          <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>zona cliente</strong></a>
+          <select name="language" id="language" class="language">
+            <option value="espanhol">ES</option>
+            <option value="italian">IT</option>
+            <option value="franch">FR</option>
+          </select>
+        </div>
+  
+      </div><!-- upper-head -->
+  
+      <div class="lower-head">
+        <div class="logo">
+          <a href="index"><img src="img/logo.png" alt="Trabaja en londres"></a>
+          <div class="menu">
+            <button type="button" class="menu-btn-sm">menu <i class="fas fa-bars"></i></button>
+          </div>
+        </div>
+          
+  
+  
+  
+          <ul class="nav">
+      <li>
+        <a href="quienes-somos">
+          quienes somos
+        </a>
+      </li><li class="button-dropdown">
+        <a href="#" class="dropdown-toggle">
+          nuestros servicios
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="drop" href="trabajo_mas_alojamiento_en_londres">
+                  TRABAJO + ALOJAMIENTO EN LONDRES
+            </a>
+            
+          </li>
+          <li>
+            <a class="drop" href="Cursos_de_Ingles_mas_alojamiento_en_londres">
+              CURSO + ALOJAMIENTO EN LONDRES
+            </a>
+          </li>
+          <li>
+            <a class="drop" href="Trabajar_en_hoteles_en_Londres">
+              PROGRAMA DE HOTELES EN LONDRES
+            </a>
+          </li>
+        </ul>
+      </li><li>
+        <a href="solicita_informacion">
+          contacta con nosotros
+        </a>
+      </li><li>
+            <a href="catalgo_trabajar_en_el_extranjero" class="orange">
+              descarga nuestro catalogo
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  
+      </div> <!-- lower head -->
+  
+  <!--dropdown menu scriptt-->
+      <script>
+        var mobileViewport = window.matchMedia("screen and (max-width: 600px)");
+        var btn = document.querySelector('.button-dropdown');
+        var dropdown = document.querySelector('.dropdown-menu');
+  
+        if(mobileViewport.matches) {
+          var btn = document.querySelector('.button-dropdown');
+          var flag = true;
+  
+          btn.addEventListener('click', function(flag){
+            return function(){
+              var dropdown = document.querySelector('.dropdown-menu');
+  
+              if (flag) {
+                flag = false;
+                dropdown.classList.add('active');
+              }else {
+                flag = true;
+                dropdown.classList.remove('active');
+              }
+            }
+          }(true));
+        } else {
+          var btn = document.querySelector('.button-dropdown');
+          btn.addEventListener('mouseover', function(){
+  
+              dropdown.classList.add('active');
+  
+          });
+  
+          btn.addEventListener('mouseout', function(){
+  
+              dropdown.classList.remove('active');
+  
+          });
+        };
+  
+  
+      </script>
+  <!--hamburger menu script-->
+  <script>
+  
+    var button = document.querySelector('.menu-btn-sm');
+    var flag = true;
+  
+    button.addEventListener('click', function(flag){
+      return function(){
+        var dropdown = document.querySelector('.nav');
+        if (flag) {
+          flag = false;
+          dropdown.style.display = 'unset';
+          button.lastElementChild.classList.remove('fa-bars');
+          button.lastElementChild.classList.add('fa-times-circle');
+        }else{
+          flag = true;
+          dropdown.style.display = 'none';
+          button.lastElementChild.classList.remove('fa-times-circle');
+          button.lastElementChild.classList.add('fa-bars');
+        }
+      }
+    }(true));
+  
+  </script>
+  
+    </header>
+
+  <section class="one">
+
+    <div class="main-picture contact-main">
+
+    </div><!--main-picture-->
+
+    <div class="under-pic informacion">
+      <h1>SOLICITA INFORMACIÓN</h1>
+      <p>Para contactar con nosotros por favor rellena el formulario.</p>
+      <img src="img/yellow-black-bar.png" alt="">
+    </div>
+
+
+    <div class="main-solicita">
+
+      <form action="" class="contact-form">
+
+        <div class="form-el">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" value="">
+        </div>
+
+        <div class="form-el">
+          <label for="tel">Teléfono:</label>
+          <input type="tel" name="tel" value="">
+        </div>
+
+        <div class="form-el">
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" value="">
+        </div>
+
+        <div class="form-el">
+          <label for="naciamento">Programa:</label>
+          <select name="naciamento">
+            <option value="curso + alojamiento">CURSO + ALOJAMIENTO</option>
+            <option value="trabajo + alojamiento">TRABAJO + ALOJAMIENTO</option>
+            <option value="programa de hoteles">PROGRAMA DE HOTELES</option>
+          </select>
+        </div>
+
+        <div class="form-el date">
+          <label for="from">Fecha de nacimiento:</label>
+          <input type="text" id="nacimiento" name="from">
+        </div>
+
+        <div class="form-el date">
+          <label for="to">Fecha de llegada aproximada:</label>
+          <input type="text" id="aproximada" name="to">
+        </div>
+
+        <div class="form-el">
+          <label for="email">Email:</label>
+          <input type="email" name="email" value="">
+        </div>
+
+        <div class="form-el msg">
+          <label for="msg">Mensaje:</label>
+          <textarea name="msg"></textarea>
+        </div>
+
+        <div class="form-el radio">
+          <p>¿Tienes pasaporte de un país miembro de la unión europea ?</p>
+          <div>
+            <input type="radio" id="contactChoice1"
+             name="contact">
+            <label for="contactChoice1">Si</label>
+
+            <input type="radio" id="contactChoice2"
+             name="contact" checked>
+            <label for="contactChoice2">No</label>
+          </div>
+        </div>
+
+        <button type="submit" name="button" class="form-btn">Enviar información</button>
+
+      </form>
+
+      
+
+      <div class="solicita-right">
+        <p>O contacta conmigo directamente, estaré encantado de ayudarte!</p>
+
+        <img src="img/stock-photo-portrait-of-the-same-man-in-different-style-clothes-isolated-on-a-white-background-720748834.jpg" alt="">
+
+        <div class="two-box">
+          <h4 class="nome"><strong>Sergio Galdos</strong></h4>
+          <span class="tel">
+            <span><img src="img/phone-symbol-of-an-auricular-inside-a-circle.png" alt=""></i></span>
+          <strong>Tel gratuito: 900 831 750</strong>
+          </span>
+          
+          <span class="wup">
+            <span><img src="img/whatsapp.png" alt=""></span>
+            <strong> +34 626 284 526</strong>
+          </span>
+
+          <span class="mail">
+              <span><i class="far fa-envelope"></i></span>
+              <strong><a href="mailto:info@londonworkexperience.com">info@londonworkexperience.com</a></strong>
+          </span>
+                    
+                
+        </div>
+
+    </div><!--main-solicita-->
+
+
+  </section><!--one-->
+
+  <footer>
+
+    <div class="upper">
+        <nav>
+            <h4>menu</h4>
+            <ul class="nav">
+                <li>
+                  <a href="quienes-somos">
+                    quienes somos
+                  </a>
+                </li>
+                <li>
+                  <a href="#">nuestros servicios</a>
+                </li>
+                <li>
+                  <a href="trabajo_mas_alojamiento_en_londres">
+                         <span>&#9654;</span> TRABAJO + ALOJAMIENTO
+                  </a>
+                </li>
+                <li>
+                  <a href="Cursos_de_Ingles_mas_alojamiento_en_londres">
+                    <span>&#9654;</span> CURSO + ALOJAMIENTO
+                  </a>
+                </li>
+                <li>
+                  <a href="Trabajar_en_hoteles_en_Londres"><span>&#9654;</span> PROGRAMA DE HOTELES</a>
+              </li>
+                <li>
+                  <a href="solicita_informacion">contacta con nosotros</a>
+                </li>
+                <li><a href="catalgo_trabajar_en_el_extranjero" class="orange">Descarga nuestro Catálogo</a>
+                    </li>
+                    
+            </nav>
+      
+            <div class="about">
+              <img src="img/logo-white.png" alt="" class="logo">
+      
+              <p>Con London Work Experience, te garantizamos con un servicio Premium y es por eso que trabajamos en colaboración con la cámara de comercio española</p>
+
+              <img src="img/scc_logo_smallwhite.png" alt="" class="chamber">
+              
+            </div>
+      
+            <div class="facebook">
+              <h4>facebook</h4>
+                <iframe class="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flondonworkexperiencespain%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=2083873568515957" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+    </div>
+
+    <div class="lower">
+      <p>&copy;LondonWorkexperience Trabajo en Londres e Inglaterra 2018 Made by Tom Fraczek.</p>
+    </div>
+
+      
+  </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LondonWork EXPERIENCE</title>
+
+
+    <!-- FONTAWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+
+    <header>
+
+      <div class="upper-head">
+  
+        <div class="left-head">
+          
+  
+          <div class="contact">
+              <img src="img/auricular-phone-symbol-in-a-circle.png" alt="Trabaja en londres">
+              <div>
+                <p>Tel&#233;fono gratuito <strong>900 831 750</strong></p>
+              </div>
+  
+                <img src="img/email.png" alt="Trabaja en londres">
+              <div>
+                <p>Envianos un e-mail a: <strong><a href="mailto:info@londonworkexperience.com">info@londonworkexperience.com</a></strong></p>
+            </div>
+          </div>
+         
+          <div class="social">
+            
+          </div>
+        </div>
+  
+        <div class="right-head">
+          <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>zona cliente</strong></a>
+          <select name="language" id="language" class="language">
+            <option value="espanhol">ES</option>
+            <option value="italian">IT</option>
+            <option value="franch">FR</option>
+          </select>
+        </div>
+  
+      </div><!-- upper-head -->
+  
+      <div class="lower-head">
+        <div class="logo">
+          <a href="index"><img src="img/logo.png" alt="Trabaja en londres"></a>
+          <div class="menu">
+            <button type="button" class="menu-btn-sm">menu <i class="fas fa-bars"></i></button>
+          </div>
+        </div>
+          
+  
+  
+  
+          <ul class="nav">
+      <li>
+        <a href="quienes-somos">
+          quienes somos
+        </a>
+      </li><li class="button-dropdown">
+        <a href="#" class="dropdown-toggle">
+          nuestros servicios
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="drop" href="trabajo_mas_alojamiento_en_londres">
+                  TRABAJO + ALOJAMIENTO EN LONDRES
+            </a>
+            
+          </li>
+          <li>
+            <a class="drop" href="Cursos_de_Ingles_mas_alojamiento_en_londres">
+              CURSO + ALOJAMIENTO EN LONDRES
+            </a>
+          </li>
+          <li>
+            <a class="drop" href="Trabajar_en_hoteles_en_Londres">
+              PROGRAMA DE HOTELES EN LONDRES
+            </a>
+          </li>
+        </ul>
+      </li><li>
+        <a href="solicita_informacion">
+          contacta con nosotros
+        </a>
+      </li><li>
+            <a href="catalgo_trabajar_en_el_extranjero" class="orange">
+              descarga nuestro catalogo
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  
+      </div> <!-- lower head -->
+  
+  <!--dropdown menu scriptt-->
+      <script>
+        var mobileViewport = window.matchMedia("screen and (max-width: 600px)");
+        var btn = document.querySelector('.button-dropdown');
+        var dropdown = document.querySelector('.dropdown-menu');
+  
+        if(mobileViewport.matches) {
+          var btn = document.querySelector('.button-dropdown');
+          var flag = true;
+  
+          btn.addEventListener('click', function(flag){
+            return function(){
+              var dropdown = document.querySelector('.dropdown-menu');
+  
+              if (flag) {
+                flag = false;
+                dropdown.classList.add('active');
+              }else {
+                flag = true;
+                dropdown.classList.remove('active');
+              }
+            }
+          }(true));
+        } else {
+          var btn = document.querySelector('.button-dropdown');
+          btn.addEventListener('mouseover', function(){
+  
+              dropdown.classList.add('active');
+  
+          });
+  
+          btn.addEventListener('mouseout', function(){
+  
+              dropdown.classList.remove('active');
+  
+          });
+        };
+  
+  
+      </script>
+  <!--hamburger menu script-->
+  <script>
+  
+    var button = document.querySelector('.menu-btn-sm');
+    var flag = true;
+  
+    button.addEventListener('click', function(flag){
+      return function(){
+        var button = document.querySelector('.menu-btn-sm');
+        var dropdown = document.querySelector('.nav');
+        if (flag) {
+          flag = false;
+          dropdown.style.display = 'unset';
+          button.lastElementChild.classList.remove('fa-bars');
+          button.lastElementChild.classList.add('fa-times-circle');
+        }else{
+          flag = true;
+          dropdown.style.display = 'none';
+          button.lastElementChild.classList.remove('fa-times-circle');
+          button.lastElementChild.classList.add('fa-bars');
+        }
+      }
+    }(true));
+  
+  </script>
+  
+    </header>
+
+  <section class="one">
+    <div class="main-picture trabajo-alojamiento">
+
+      <div class="main-pic-header">
+
+        <div class="pic-ca">
+          <h1>trabajo y alojamiento En Londres</h1>
+          <img src="img/yellow-black-bar.png" alt="">
+          <p>Nuestro programa te ayuda a  encontrar trabajo<br/>
+            en la hostelería y alojamiento en Londres<br/>
+            en menos de 15 días.</p>
+        </div>
+      </div> <!--main-pic-header-->
+
+    </div><!--main-picture-->
+
+  </section><!--one-->
+
+  <section class="ta-two">
+    <div class="ta-buttons">
+
+      <div class="btn-wraper trabajo-btn">
+        <button class="under-btn active">TRABAJO EN LONDRES</button>
+        <div class="under-bar ta-active"></div>
+      </div>
+
+      <div class="btn-wraper">
+        <button class="under-btn aloja-btn">alojamiento en londres</button>
+        <div class="under-bar"></div>
+      </div>
+
+      <div class="btn-wraper">
+        <button class="under-btn tarifas-btn">tarifas del programa</button>
+        <div class="under-bar"></div>
+      </div>
+
+
+<script>
+
+    var btn = document.querySelectorAll('.under-btn');
+
+    for (var i = 0; i < btn.length; i++) {
+      btn[i].addEventListener('click', function(){
+        var button = this;
+        var div = button.nextElementSibling;
+        var active = document.querySelector('.active');
+        var caActive = document.querySelector('.ta-active');
+
+        active.classList.remove('active');
+        button.classList.add('active');
+        caActive.classList.remove('ta-active');
+        div.classList.add('ta-active');
+
+      });
+    }
+
+</script>
+
+
+    </div><!--ca-buttons-->
+
+  </section><!--ca-two-->
+
+
+  <section class="ta-two-cont">
+
+    <article class="trabajo">
+
+        <h2>¡En LWE te ayudamos en tu búsqueda de trabajo en Londres desde el primer día!</h2>
+
+        
+
+      <div class="trabajo-left">
+
+        <h3>Un trabajo en Londres en menos de 15 dias</h3>
+        
+        <img class="bar" src="img/yellow-black-bar.png" alt="">
+
+        <p>Para aumentar  tus probabilidades de encontrar un trabajo en menos de 15 días El equipo de London Work Experience te consigue 1 entrevista cada día en el sector de la hostelería!
+            </p><p>También te ayudamos hasta que  hayas encontrado un trabajo ofreciéndote apoyo y asesoramiento .
+                </p>
+                <p>Estos son ejemplos de algunos de los puestos de trabajo que puedes conseguir con nosotros</p>
+
+      </div>
+
+      <div class="ca-gallery">
+          <h3>Algunos Puestos de Trabajos que proponemos</h3>
+          <img class="bar" src="img/yellow-black-bar.png" alt="">
+
+        <div class="main gal-single">
+          <img src="img/camarero.jpg" alt="">
+          <div class="under-gal-bar">&#9654; Camarero</div>
+        </div>
+
+        <div class="gal-single">
+          <img src="img/bartender.jpg" alt="">
+          <div class="under-gal-bar">&#9654; Barman</div>
+        </div>
+
+        <div class="gal-single">
+          <img src="img/cheef.jpg" alt="">
+          <div class="under-gal-bar">&#9654; Chef</div>
+        </div>
+
+        <div class="gal-single">
+          <img src="img/recepcionist.jpg" alt="">
+          <div class="under-gal-bar">&#9654; Recepcionista</div>
+        </div>
+
+      </div>
+
+
+    </article>
+
+
+    <article class="ta-bottom">
+
+      <div class="checkpoint">
+        <img src="img/black-thin-bar.png" alt="">
+          <p>El Servicio también incluye</p>
+        <img src="img/black-thin-bar.png" alt="">
+      </div>
+
+
+      <div class="includo-servicio">
+
+        <div class="one-fifth">
+          <img src="img/simcard.png" alt="">
+          <div class="underpick">
+            <img src="img/yellow-black-vert.png" alt="">
+            <p>Activación de una<br/>tarjeta SIM inglesa</p>
+          </div>
+        </div>
+
+        <div class="one-fifth">
+          <img src="img/movingtolondonnationalinsurancenumber.jpg " alt="">
+          <div class="underpick">
+            <img src="img/yellow-black-vert.png" alt="">
+            <p>Ayuda para obtener el NIN<br/>(Nacional Insurance Number)</p>
+          </div>
+        </div>
+
+        <div class="one-fifth">
+          <img src="img/curiculum.png" alt="">
+          <div class="underpick">
+            <img src="img/yellow-black-vert.png" alt="">
+            <p>Traducción del CV<br/> en inglés</p>
+          </div>
+        </div>
+
+        <div class="one-fifth">
+          <img src="img/bank.png" alt="">
+          <div class="underpick">
+            <img src="img/yellow-black-vert.png" alt="">
+            <p>Apertura de una<br/>Cuenta Bancaria</p>
+          </div>
+        </div>
+
+        <div class="one-fifth">
+          <img src="img/movein.png" alt="">
+          <div class="underpick">
+            <img src="img/yellow-black-vert.png" alt="">
+            <p>Alojamiento en Londres <br/>antes de tu llegada.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </article>
+
+  </section><!--ca-two-cont-->
+
+  <section class="alojamiento-el hidden">
+
+    <article class="alojamiento-header">
+      <h1><strong>¡En LWE puedes reservar tu alojamiento antes de tu llegada a Londres!</strong></h1>
+      <h1><strong>Para esto, te ofrecemos 2 opciones</strong></h1>
+
+      <img src="img/yellow-black-bar.png" alt="">
+
+    </article><!--alojamiento-header-->
+
+    <article class="residencia">
+
+      <h1><strong>OPCIÓN 1: Casa compartida</strong></h1>
+
+      <div class="residencia-left">
+
+        <div class="left-p">
+          <p>Tenemos varias casas ubicadas en el Este de Londres, ideales para una estadía de más de tres meses. Todas nuestras casas tienen una buena conexión de transporte y están cerca de todo tipo de tiendas, como supermercados, tiendas de ropa o el gimnasio.</p>
+        </div>
+
+        <div class="localizacion">
+
+          <div class="local-header">
+            <strong><span>&#9654; </span> Localización:</strong>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon1.png" alt="">
+            <p>Zona 3 - Entorno a Leyton<br/>
+y a Leytonstone</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon2.png" alt="">
+            <p>Central line, Piccadilly<br/>
+Line, Northen Line</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon3.png" alt="">
+            <p>Supermercados</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon7.png" alt="">
+            <p>NHS (médico de cabecera)</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon8.png" alt="">
+            <p>Zona Residencial</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon9.png" alt="">
+            <p>Ambiente</p>
+          </div>
+
+        </div><!--localizacion-->
+
+        <div class="incluyen">
+
+          <div class="local-header">
+            <strong><span>&#9654; </span> Las casas incluyen:</strong>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon5.png" alt="">
+            <p>Cocina equipada</p>
+          </div>
+
+            <div class="item">
+            <img class="incl-sm" src="img/alojamiento-icon13.png" alt="">
+            <p>Jardín*</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon6.png" alt="">
+            <p>Baño</p>
+          </div>
+
+          <div class="item">
+            <img class="incl-sm" src="img/alojamiento-icon14.png" alt="">
+            <p>Comedor*</p>
+          </div>
+
+          <span class="add">*No en todas las casas.</span>
+
+        </div><!--incluyen-->
+
+        <button type="button" name="button" class="o-one-btn">Ver precios de las habitaciones <span>&#9654;</span></button>
+        <table class="hidden">
+          <tr>
+            <td class="edit"><img src="img/alojamiento-icon10.png" alt="">Habitación individual</td>
+            <td colspan=""><strong>£130 - £160 por semana</strong></td>
+          </tr>
+          <tr>
+            <td class="edit"><img src="img/alojamiento-icon11.png" alt="">Habitación doble</td>
+            <td colspan=""><strong>£95 - £130 por semana</strong></td>
+
+          </tr>
+          <tr>
+            <td colspan="2" class="add">(camas separadas o literas)</td>
+          </tr>
+        </table>
+
+      </div><!--residencia-left-->
+
+      <div class="residencia-right">
+
+        <div class="residencia-gallery">
+
+            <div class="main-picture">
+                <img src="img/CURSO + ALOJAMIENTO-14.jpg" alt="">
+              </div>
+    
+              <div class="mini">
+                <img src="img/CURSO + ALOJAMIENTO-15.jpg" alt="">
+                <div class="fake"></div>
+              </div>
+
+        </div><!--residencia-gallery-->
+
+      </div><!--residencia-right-->
+
+      <img class="border-bar" src="img/black-long-bar.png" alt="">
+
+    </article><!--residencia-->
+
+
+
+    <article class="compartida">
+
+      <h1><strong>OPCIÓN 2: Residencia de estudiantes en Londres</strong></h1>
+
+      <div class="compartida-left">
+
+        <div class="comp-p">
+          <p>Nuestra residencia de estudiantes y de jóvenes profesionales Bethnal<br/>
+Student Living mantiene con un ambiente fresco e internacional ideal<br/>
+para una experiencia única en le centro de Londres.</p>
+        </div>
+
+        <div class="localizacion">
+
+          <div class="local-header">
+            <strong><span>&#9654; </span> Localización:</strong>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon1.png" alt="">
+            <p>Zona 2 - Bethnal Green</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon2.png" alt="">
+            <p>Central line &amp; Overground</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon3.png" alt="">
+            <p>Supermercados</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon7.png" alt="">
+            <p>NHS (médico de cabecera)</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon8.png" alt="">
+            <p>Parque Natural</p>
+          </div>
+
+          <div class="item">
+            <img src="img/alojamiento-icon9.png" alt="">
+            <p>Ambiente juvenil</p>
+          </div>
+
+        </div><!--localizacion-->
+
+        <div class="detal-holder">
+
+          <div class="incluyen">
+
+            <div class="incluyen-header">
+              <strong><span>&#9654; </span> Los Pisos incluyen:</strong>
+            </div>
+
+            <div class="item">
+              <img src="img/alojamiento-icon4.png" alt="">
+              <p>2 habitaciones</p>
+            </div>
+
+            <div class="item">
+              <img src="img/alojamiento-icon5.png" alt="">
+              <p>Cocina equipada</p>
+            </div>
+
+            <div class="item">
+              <img src="img/alojamiento-icon6.png" alt="">
+              <p>Baño</p>
+            </div>
+
+          </div>
+
+          <div class="habitacion">
+
+            <div class="habitacion-header">
+              <strong><span>&#9654; </span> Tipos de Habitación:</strong>
+            </div>
+
+            <div class="item">
+              <img src="img/alojamiento-icon10.png" alt="">
+              <p><strong>Individual</strong></p>
+            </div>
+
+            <div class="item">
+              <img src="img/alojamiento-icon11.png" alt="">
+              <p><strong>Twin</strong> (camas separadas
+  o literas)</p>
+            </div>
+
+            <div class="item">
+              <img src="img/alojamiento-icon12.png" alt="">
+              <p><strong>Múltiples</strong> (Triple,
+  cuádruple, séxtuple)</p>
+            </div>
+
+          </div><!--habitacion-->
+
+        </div><!--incluyen-->
+
+      </div>
+
+      </div><!--compartida-left-->
+
+      <div class="compertida-right">
+
+        <div class="compertida-gallery">
+
+            <div class="main-picture">
+                <img src="img/alojamento-gallery1.png" alt="">
+              </div>
+    
+              <div class="mini">
+                <img src="img/alojamento-gallery2.png" alt="">
+                <img src="img/alojamento-gallery3.png" alt="">
+              </div>
+
+        </div><!--compertida-gallery-->
+
+      </div><!--compertida-right-->
+
+      <button type="button" name="button" class="o-one-btn btn-o-two">Ver precios de las habitaciones <span>&#9654;</span></button>
+
+      <table class="hidden">
+        <tr>
+          <td class="edit"><img src="img/alojamiento-icon10.png" alt="">Habitación individual</td>
+          <td colspan=""><strong>£242</strong><span class="semana"> por semana</span></td>
+        </tr>
+        <tr>
+          <td class="edit"><img src="img/alojamiento-icon11.png" alt="">Habitación doble</td>
+          <td colspan=""><strong>£148</strong><span class="semana"> por semana</span></td>
+        </tr>
+        <tr>
+          <td><img src="img/alojamiento-icon12.png" alt="">Habitación triple LUX</td>
+          <td><strong>£162</strong><span class="semana"> por semana</span></td>
+        </tr>
+        <tr>
+          <td><span class="td-wrapper"><strong>4</strong><img src="img/alojamiento-icon12.png" alt=""></span>Habitación cuádruple</td>
+          <td><strong>£123</strong><span class="semana"> por semana</span></td>
+        </tr>
+        <tr>
+          <td><span class="td-wrapper"><strong>6</strong><img src="img/alojamiento-icon12.png" alt=""></span>Habitación séxtuple</td>
+          <td><strong>£109</strong><span class="semana"> por semana</span></td>
+        </tr>
+        <tr>
+          <td colspan="2"><span class="add">(camas separadas o literas)<span></td>
+        </tr>
+
+      </table>
+    </article><!--compertida-->
+
+    <script>
+
+      var button = document.querySelectorAll('.o-one-btn');
+      var flag = true;
+
+      for (var i = 0; i < button.length; i++) {
+        button[i].addEventListener('click', function(flag){
+          return function(){
+            var btn = this;
+            var table = btn.nextElementSibling;
+            var arrow = btn.lastElementChild;
+
+            if (flag) {
+              flag = false;
+              table.classList.remove('hidden');
+              arrow.innerHTML = '&#9660;';
+              btn.style.background = '$text;';
+            } else {
+              flag = true;
+              table.classList.add('hidden');
+              arrow.innerHTML = '&#9654;';
+              btn.style.background = '$btn-one;';
+            }
+          };
+        }(true));
+      }
+
+    </script>
+
+  </section><!--alojamiento-->
+
+
+  <section class="tarifas hidden">
+
+    <article class="tarifas-header">
+      <h1><strong>Tarifas de nuestro programa de Trabajo y Alojamiento en Londres</strong></h1>
+
+
+    </article><!--alojamiento-header-->
+
+    <article class="tarifas-left">
+
+      <div class="lefter">
+        <h1>Precio del Programa</h1>
+        <img src="img/black-bar.png" alt="">
+        <span>495 €</span>
+      </div>
+
+      <div class="righter">
+
+        <div class="upper">
+
+          <div class="upper-left">
+            <h1>INSCRIPCIÓN</h1>
+            <img src="img/yellow-black-bar.png" alt="">
+            <span>120€</span>
+          </div>
+
+          <div class="upper-right">
+            <p>Esta cantidad es para cubrir tasas administrativas.</p>
+            <p>Tienes un año desde el día en que haces el pago<br/>
+de la inscripción para venir a Londres.</p>
+          </div>
+
+        </div><!--upper-->
+
+        <div class="lower">
+          <div class="lower-left">
+            <h1>PRECIO DEL<br/>SERVICIO</h1>
+            <img src="img/yellow-black-bar.png" alt="">
+            <span>375€</span>
+          </div>
+
+          <div class="lower-right">
+            <p>Se puede pagar por adelantado o en a tu<br/>
+llegada en nuestra oficina en Londres.</p>
+          </div>
+        </div>
+
+      </div>
+    </article><!--tarifas-left-->
+
+    <aside class="infoline">
+
+      <div class="info-content">
+
+        <img src="img/stock-photo-portrait-of-the-same-man-in-different-style-clothes-isolated-on-a-white-background-720748834.jpg" alt="">
+
+        <div class="info-header">
+          <h1>¿QUE QUIERES <br/>HACER?</h1>
+          <p>¿Solicitar más información<br />o descargar catalogo?</p>
+        </div>
+
+        <a href="solicita_informacion" class="btn-dark">MÁS INFORMACIÓN <span>&#9654;</span></a>
+        <a href="catalgo_trabajar_en_el_extranjero" class="btn-yellow">DESCARGA CATALOGO <span>&#9654;</span></a>
+
+      </div><!--info-content-->
+
+    </aside><!--infoline-->
+
+  </section><!--tarifas-->
+
+
+<script>
+
+var trabajo = document.querySelector('.trabajo-btn');
+var trabajoCnt = document.querySelector('.ta-two-cont');
+var aloja = document.querySelector('.aloja-btn');
+var alojaCnt = document.querySelector('.alojamiento-el');
+var tarifas = document.querySelector('.tarifas-btn');
+var tarifasCnt = document.querySelector('.tarifas');
+
+  trabajo.addEventListener('click', function(){
+    trabajoCnt.classList.remove('hidden');
+    alojaCnt.classList.add('hidden');
+    tarifasCnt.classList.add('hidden');
+  });
+
+  aloja.addEventListener('click', function(){
+    alojaCnt.classList.remove('hidden');
+    trabajoCnt.classList.add('hidden');
+
+    tarifasCnt.classList.add('hidden');
+  });
+
+  tarifas.addEventListener('click', function(){
+    tarifasCnt.classList.remove('hidden');
+    trabajoCnt.classList.add('hidden');
+    alojaCnt.classList.add('hidden');
+  });
+
+</script>
+
+<footer>
+
+  <div class="upper">
+      <nav>
+          <h4>menu</h4>
+          <ul class="nav">
+              <li>
+                <a href="quienes-somos">
+                  quienes somos
+                </a>
+              </li>
+              <li>
+                <a href="#">nuestros servicios</a>
+              </li>
+              <li>
+                <a href="trabajo_mas_alojamiento_en_londres">
+                       <span>&#9654;</span> TRABAJO + ALOJAMIENTO
+                </a>
+              </li>
+              <li>
+                <a href="Cursos_de_Ingles_mas_alojamiento_en_londres">
+                  <span>&#9654;</span> CURSO + ALOJAMIENTO
+                </a>
+              </li>
+              <li>
+                <a href="Trabajar_en_hoteles_en_Londres"><span>&#9654;</span> PROGRAMA DE HOTELES</a>
+            </li>
+              <li>
+                <a href="solicita_informacion">contacta con nosotros</a>
+              </li>
+              <li><a href="catalgo_trabajar_en_el_extranjero" class="orange">Descarga nuestro Catálogo</a>
+                  </li>
+                  
+          </nav>
+    
+          <div class="about">
+            <img src="img/logo-white.png" alt="" class="logo">
+    
+            <p>Con London Work Experience, te garantizamos con un servicio Premium y es por eso que trabajamos en colaboración con la cámara de comercio española</p>
+
+            <img src="img/scc_logo_smallwhite.png" alt="" class="chamber">
+            
+          </div>
+    
+          <div class="facebook">
+            <h4>facebook</h4>
+              <iframe class="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flondonworkexperiencespain%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=2083873568515957" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
+  </div>
+
+  <div class="lower">
+    <p>&copy;LondonWorkexperience Trabajo en Londres e Inglaterra 2018 Made by Tom Fraczek.</p>
+  </div>
+
+    
+</footer>
+
+  </body>
+</html>

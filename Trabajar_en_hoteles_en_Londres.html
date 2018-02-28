@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="En London Work Experience te proponemos trabajar en hoteles situados en Londres o fuera de Londres en unos de nuestros hoteles colaboradores para los que quieren trabajar en el extranjero">
+
+
+    <title>LondonWork EXPERIENCE</title>
+
+
+    <!-- FONTAWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+
+    <header>
+
+      <div class="upper-head">
+  
+        <div class="left-head">
+          
+  
+          <div class="contact">
+              <img src="img/auricular-phone-symbol-in-a-circle.png" alt="Trabaja en londres">
+              <div>
+                <p>Tel&#233;fono gratuito <strong>900 831 750</strong></p>
+              </div>
+  
+                <img src="img/email.png" alt="Trabaja en londres">
+              <div>
+                <p>Envianos un e-mail a: <strong><a href="mailto:info@londonworkexperience.com">info@londonworkexperience.com</a></strong></p>
+            </div>
+          </div>
+         
+          <div class="social">
+            
+          </div>
+        </div>
+  
+        <div class="right-head">
+          <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>zona cliente</strong></a>
+          <select name="language" id="language" class="language">
+            <option value="espanhol">ES</option>
+            <option value="italian">IT</option>
+            <option value="franch">FR</option>
+          </select>
+        </div>
+  
+      </div><!-- upper-head -->
+  
+      <div class="lower-head">
+        <div class="logo">
+          <a href="index"><img src="img/logo.png" alt="Trabaja en londres"></a>
+          <div class="menu">
+            <button type="button" class="menu-btn-sm">menu <i class="fas fa-bars"></i></button>
+          </div>
+        </div>
+          
+  
+  
+  
+          <ul class="nav">
+      <li>
+        <a href="quienes-somos">
+          quienes somos
+        </a>
+      </li><li class="button-dropdown">
+        <a href="#" class="dropdown-toggle">
+          nuestros servicios
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="drop" href="trabajo_mas_alojamiento_en_londres">
+                  TRABAJO + ALOJAMIENTO EN LONDRES
+            </a>
+            
+          </li>
+          <li>
+            <a class="drop" href="Cursos_de_Ingles_mas_alojamiento_en_londres">
+              CURSO + ALOJAMIENTO EN LONDRES
+            </a>
+          </li>
+          <li>
+            <a class="drop" href="Trabajar_en_hoteles_en_Londres">
+              PROGRAMA DE HOTELES EN LONDRES
+            </a>
+          </li>
+        </ul>
+      </li><li>
+        <a href="solicita_informacion">
+          contacta con nosotros
+        </a>
+      </li><li>
+            <a href="catalgo_trabajar_en_el_extranjero" class="orange">
+              descarga nuestro catalogo
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  
+      </div> <!-- lower head -->
+  
+  <!--dropdown menu scriptt-->
+      <script>
+        var mobileViewport = window.matchMedia("screen and (max-width: 600px)");
+        var btn = document.querySelector('.button-dropdown');
+        var dropdown = document.querySelector('.dropdown-menu');
+  
+        if(mobileViewport.matches) {
+          var btn = document.querySelector('.button-dropdown');
+          var flag = true;
+  
+          btn.addEventListener('click', function(flag){
+            return function(){
+              var dropdown = document.querySelector('.dropdown-menu');
+  
+              if (flag) {
+                flag = false;
+                dropdown.classList.add('active');
+              }else {
+                flag = true;
+                dropdown.classList.remove('active');
+              }
+            }
+          }(true));
+        } else {
+          var btn = document.querySelector('.button-dropdown');
+          btn.addEventListener('mouseover', function(){
+  
+              dropdown.classList.add('active');
+  
+          });
+  
+          btn.addEventListener('mouseout', function(){
+  
+              dropdown.classList.remove('active');
+  
+          });
+        };
+  
+  
+      </script>
+  <!--hamburger menu script-->
+  <script>
+  
+    var button = document.querySelector('.menu-btn-sm');
+    var flag = true;
+  
+    button.addEventListener('click', function(flag){
+      return function(){
+        var dropdown = document.querySelector('.nav');
+        if (flag) {
+          var button = document.querySelector('.menu-btn-sm');
+          flag = false;
+          dropdown.style.display = 'unset';
+          button.lastElementChild.classList.remove('fa-bars');
+          button.lastElementChild.classList.add('fa-times-circle');
+        }else{
+          flag = true;
+          dropdown.style.display = 'none';
+          button.lastElementChild.classList.remove('fa-times-circle');
+          button.lastElementChild.classList.add('fa-bars');
+        }
+      }
+    }(true));
+  
+  </script>
+  
+    </header>
+
+  <section class="one">
+    <div class="main-picture programa-hoteles">
+
+      <div class="main-pic-header">
+
+        <div class="pic-ca">
+          <h1>Programa de Hoteles</h1>
+          <img src="img/yellow-black-bar.png" alt="Trabajo en hoteles en Londres">
+          <p>¡Nuestro programa te ayudará a encontrar<br/>
+          trabajo en hostelería y alojamiento en<br/>
+          Londres en menos de 15 días!</p>
+        </div>
+      </div> <!--main-pic-header-->
+
+    </div><!--main-picture-->
+
+  </section><!--one-->
+
+  <section class="ta-two">
+    <div class="ta-buttons">
+
+      <div class="btn-wraper trabajo-btn">
+        <button class="under-btn active">DESCRIPCIÓN</button>
+        <div class="under-bar ta-active"></div>
+      </div>
+
+      <div class="btn-wraper">
+        <button class="under-btn tarifas-btn">TARIFAS DEL PROGRAMA</button>
+        <div class="under-bar"></div>
+      </div>
+
+      <div class="btn-wraper">
+        <button class="under-btn reservar-btn">COMO RESERVAR</button>
+        <div class="under-bar"></div>
+      </div>
+
+
+<script>
+
+    var btn = document.querySelectorAll('.under-btn');
+
+    for (var i = 0; i < btn.length; i++) {
+      btn[i].addEventListener('click', function(){
+        var button = this;
+        var div = button.nextElementSibling;
+        var active = document.querySelector('.active');
+        var caActive = document.querySelector('.ta-active');
+
+        active.classList.remove('active');
+        button.classList.add('active');
+        caActive.classList.remove('ta-active');
+        div.classList.add('ta-active');
+
+      });
+    }
+
+</script>
+
+
+    </div><!--ca-buttons-->
+
+  </section><!--ca-two-->
+
+
+  <section class="pdh-two-cont">
+
+    <article class="descripcion">
+
+      <div class="descripcion-left">
+
+        <h2><strong>Trabajo En Hoteles</strong></h2>
+
+        <img src="img/yellow-black-bar.png" alt="Trabajo en hoteles en Londres">
+
+        <p>Te permite adquirir experiencia laboral en Inglaterra además
+de mejorar tu nivel de inglés, proporcionándote un trabajo
+en alguno de nuestros hoteles colaboradores dentro o fuera de Londres.</p>
+
+      </div>
+
+      <div class="description-right">
+
+        <div class="upper">
+
+          <h1><strong>REQUISITOS</strong></h1>
+          <img class="bar" src="img/yellow-black-bar.png" alt="">
+
+          <div class="wrapper">
+
+            <img src="img/check-yellow.png" alt="Trabajo en hoteles en Londres"><p>Ser ciudadano de la Unión Europea.</p>
+            <img src="img/check-yellow.png" alt="Trabajo en hoteles en Londres"><p>Tener entre 21 y 40 años de edad.<br/>
+    de 3 meses.</p>
+            <img src="img/check-yellow.png" alt="Trabajo en hoteles en Londres"><p>Disponibilidad de estancia de mínima de 3 meses.</p>
+            <img src="img/check-yellow.png" alt="Trabajo en hoteles en Londres"><p>Ser flexible ayuda a encontrar una posición más rápida en el hotel de destino.</p>
+
+          </div>
+
+        </div><!--upper-->
+
+      </div><!--description-right-->
+
+      <div class="lower">
+        <h1> Importante</h1>
+        <img src="img/warning.png" alt="">
+        <p>Los hoteles no están todos situados en Londres. Pueden encontrarse en otras grandes ciudades o bien en pequeñas localidades orientadas a un turismo más tranquilo.</p>
+        <p>Es difícil colocar en el mismo hotel a dos personas (amigos, novios, etc.). Si se desea trabajar en el mismo sitio, se debe renunciar a la posibilidad de elegir zona.</p>
+
+      </div><!--lower-->
+
+    </article><!--description-->
+
+    <section class="tres">
+      <img src="img/Programasdehoteles-5.jpg" alt="Trabajo en hoteles en Londres">
+      <img src="img/Programasdehoteles-3.jpg" alt="Trabajo en hoteles en Londres">
+      <img src="img/Programasdehoteles-4.jpg" alt="Trabajo en hoteles en Londres">
+    </section>
+
+
+
+
+  </section><!--ca-two-cont-->
+
+  <section class="reservar hidden">
+
+
+    <div class="numero">
+      <div class="left">
+        <img src="img/no1.png" alt="Trabajo en hoteles en Londres">
+      </div>
+
+      <div class="numero-header">
+        <h1><strong>PRIMER PASO - Documentación</strong></h1>
+        <img src="img/yellow-black-bar.png" alt="Trabajo en hoteles en Londres">
+      </div>
+
+      <div class="midle">
+
+
+        <p>Envíanos la siguiente documentación a:</p>
+        <a href="mailto:info@londonworkexperience.com"><span><img src="img/envelope-black.png" alt="Trabajo en hoteles en Londres"><p>info@londonworkexperience.com</p></span> <span>&#9654;</span></a>
+        <p>Si quieres saber más sobre los requisitos del programa, puedes rellenar una solicitud de información aquí sin compromiso.</p>
+      </div>
+
+      <div class="right">
+        <span>&#9654;</span>
+        <p>CV con foto incluida.</p>
+        <span>&#9654;</span>
+        <p>Copia del DNI o pasaporte</p>
+        <span>&#9654;</span>
+        <p>Certificado médico o carta de tu médico<br/>
+declarando que el solicitante no tiene problemas graves<br/>
+de salud.</p>
+      </div>
+
+    </div>
+
+    <div class="numero">
+      <div class="left">
+        <img src="img/no2.png" alt="Trabajo en hoteles en Londres">
+      </div>
+
+      <div class="numero-header">
+        <h1><strong>SEGUNDO PASO - Aceptación de candidatura</strong></h1>
+        <img src="img/yellow-black-bar.png" alt="Trabajo en hoteles en Londres">
+      </div>
+
+      <div class="midle">
+        <p>Una vez que recibimos la documentación verificada por nuestras oficinas, te llamaremos en un PLAZO DE 72 HORAS para confirmar si tu candidatura ha sido aceptada.</p>
+        <p>Si la respuesta es positiva, debes realizar el pago de la reserva (Paso 3) en un máximo de 48 horas.</p>
+      </div>
+
+      <div class="right-black">
+
+      </div>
+
+    </div>
+
+    <div class="numero">
+      <div class="left">
+        <img src="img/no3.png" alt="Trabajo en hoteles en Londres">
+      </div>
+
+      <div class="numero-header">
+        <h1><strong>TERCER PASO - Pago de la inscripción</strong></h1>
+        <img src="img/yellow-black-bar.png" alt="Trabajo en hoteles en Londres">
+      </div>
+
+      <div class="midle">
+
+        <p>Una vez aceptada tu candidatura, para comenzar la búsqueda del hotel, se debe hacer el pago de la inscripción y reserva de 250€ a través de la zona cliente o mediante transferencia bancaria.</p>
+        <p>No olvides indicar tu nombre y apellidos en el concepto del ingreso.</p>
+      </div>
+
+      <div class="right">
+        <span>&#9654;</span>
+        <p><strong>Entidad:</strong> Banco Sabadell</p>
+        <span>&#9654;</span>
+        <p><strong>Titular: </strong>Promociones y Cursos UK, S.L.</p>
+        <span>&#9654;</span>
+        <p><strong>IBAN: </strong>ES81 0081 4150 2900 0107 5108</p>
+        <span>&#9654;</span>
+        <p><strong>SWIFT/BIC: </strong>BSAB ESBB</p>
+      </div>
+
+    </div>
+
+    <div class="numero">
+      <div class="left">
+        <img src="img/no4.png" alt="Trabajo en hoteles en Londres">
+      </div>
+
+      <div class="numero-header">
+        <h1>CUARTO PASO - <strong>Pago del programa</strong></h1>
+        <img src="img/yellow-black-bar.png" alt="Trabajo en hoteles en Londres">
+      </div>
+
+      <div class="midle">
+        <p>Una vez conﬁrmado el hotel junto con a las condiciones laborales deberás completar el pago del programa (los 500€ restantes).</p>
+        <p>Seguidamente se te enviará todo por correo electrónico y se te comunicará (por teléfono y/o correo) las características del hotel, elugar de residencia y fecha de llegada e incorporación al trabajo.</p>
+      </div>
+
+      <div class="right-black2">
+
+      </div>
+
+    </div>
+
+    <div class="end-img"></div>
+
+  </section><!--alojamiento-->
+
+
+  <section class="tarifas-pdh hidden">
+
+    <div class="wrapper">
+
+      <article class="tarifas-left">
+
+        <div class="lefter">
+          <h1>Precio del Programa</h1>
+          <img src="img/black-bar.png" alt="Trabajo en hoteles en Londres">
+          <span>750 €</span>
+        </div>
+
+        <div class="righter">
+
+          <div class="upper">
+
+            <div class="upper-left">
+              <h1>PRIMER PAGO</h1>
+              <img src="img/yellow-black-bar.png" alt="Trabajo en hoteles en Londres">
+
+
+
+
+
+
+              <span>250€</span>
+            </div>
+
+            <div class="upper-right">
+              <p>Para comenzar con la búsqueda del trabajo<br/>
+  en hoteles.</p>
+            </div>
+
+          </div><!--upper-->
+
+          <div class="lower">
+            <div class="lower-left">
+              <h1>SEGUNDO PAGO</h1>
+              <img src="img/yellow-black-bar.png" alt="Trabajo en hoteles en Londres">
+              <span>500€</span>
+            </div>
+
+            <div class="lower-right">
+              <p>Una vez se haya confirmado al candidato el<br/>
+  hotel de destino y las condiciones laborales.</p>
+            </div>
+          </div>
+
+        </div>
+      </article><!--tarifas-left-->
+
+      <aside class="infoline">
+
+        <div class="info-content">
+
+          <img src="img/stock-photo-portrait-of-the-same-man-in-different-style-clothes-isolated-on-a-white-background-720748834.jpg" alt="Trabajo en hoteles en Londres">
+
+          <div class="info-header">
+            <h1>¿QUE QUIERES <br/>HACER?</h1>
+            <p>¿Solicitar más información<br />o descargar catalogo?</p>
+          </div>
+
+          <a href="solicita_informacion" class="btn-dark">MÁS INFORMACIÓN <span>&#9654;</span></a>
+          <a href="catalgo_trabajar_en_el_extranjero" class="btn-yellow">DESCARGA CATALOGO <span>&#9654;</span></a>
+          
+        </div><!--info-content-->
+
+      </aside><!--infoline-->
+
+    </div><!--wrapper-->
+
+    <div class="end-img"></div>
+
+
+
+  </section><!--tarifas-pdh-->
+
+
+<script>
+
+var trabajo = document.querySelector('.trabajo-btn');
+var trabajoCnt = document.querySelector('.pdh-two-cont');
+var aloja = document.querySelector('.tarifas-btn');
+var alojaCnt = document.querySelector('.tarifas-pdh');
+var tarifas = document.querySelector('.reservar-btn');
+var tarifasCnt = document.querySelector('.reservar');
+
+
+  trabajo.addEventListener('click', function(){
+    trabajoCnt.classList.remove('hidden');
+    alojaCnt.classList.add('hidden');
+    tarifasCnt.classList.add('hidden');
+  });
+
+  aloja.addEventListener('click', function(){
+    alojaCnt.classList.remove('hidden');
+    trabajoCnt.classList.add('hidden');
+    tarifasCnt.classList.add('hidden');
+  });
+
+  tarifas.addEventListener('click', function(){
+    tarifasCnt.classList.remove('hidden');
+    trabajoCnt.classList.add('hidden');
+    alojaCnt.classList.add('hidden');
+  });
+
+</script>
+
+<footer>
+
+  <div class="upper">
+      <nav>
+          <h4>menu</h4>
+          <ul class="nav">
+              <li>
+                <a href="quienes-somos">
+                  quienes somos
+                </a>
+              </li>
+              <li>
+                <a href="#">nuestros servicios</a>
+              </li>
+              <li>
+                <a href="trabajo_mas_alojamiento_en_londres">
+                       <span>&#9654;</span> TRABAJO + ALOJAMIENTO
+                </a>
+              </li>
+              <li>
+                <a href="Cursos_de_Ingles_mas_alojamiento_en_londres">
+                  <span>&#9654;</span> CURSO + ALOJAMIENTO
+                </a>
+              </li>
+              <li>
+                <a href="Trabajar_en_hoteles_en_Londres"><span>&#9654;</span> PROGRAMA DE HOTELES</a>
+            </li>
+              <li>
+                <a href="solicita_informacion">contacta con nosotros</a>
+              </li>
+              <li><a href="catalgo_trabajar_en_el_extranjero" class="orange">Descarga nuestro Catálogo</a>
+                  </li>
+                  
+          </nav>
+    
+          <div class="about">
+            <img src="img/logo-white.png" alt="" class="logo">
+    
+            <p>Con London Work Experience, te garantizamos con un servicio Premium y es por eso que trabajamos en colaboración con la cámara de comercio española</p>
+
+            <img src="img/scc_logo_smallwhite.png" alt="" class="chamber">
+            
+          </div>
+    
+          <div class="facebook">
+            <h4>facebook</h4>
+              <iframe class="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flondonworkexperiencespain%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=2083873568515957" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
+  </div>
+
+  <div class="lower">
+    <p>&copy;LondonWorkexperience Trabajo en Londres e Inglaterra 2018 Made by Tom Fraczek.</p>
+  </div>
+
+    
+</footer>
+
+  </body>
+</html>
