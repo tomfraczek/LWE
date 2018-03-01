@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="London Work Experience est une agence de placement qui a pour but d’aider les francais 
+    à s’installer à Londres (ou y vivre quelques mois ) en leur fournissant travail, logement et cours d'anglais si nécessaire!">
+    <meta name=keywords content="">
+
+    <title>Agence de Placement Londres | London Work Experience</title>
+
+
+    <!-- FONTAWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+<script>
+function initMap() {
+        var uluru = {lat: 51.532165, lng: -0.056140};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+</script>
+  </head>
+  <body>
+
+    <header>
+
+    <div class="upper-head">
+
+      <div class="left-head">
+        
+
+        <div class="contact">
+            <img src="img/auricular-phone-symbol-in-a-circle.png" alt="Trabaja en londres">
+            <div>
+              <p>Téléphone gratuit <strong>900 831 750</strong></p>
+            </div>
+
+              <img src="img/email.png" alt="Trabaja en londres">
+            <div>
+              <p>Contactez nous à: <strong><a href="mailto:info.fr@londonworkexperience.com">info.fr@londonworkexperience.com</a></strong></p>
+          </div>
+        </div>
+       
+        <div class="social">
+          
+        </div>
+      </div>
+
+      <div class="right-head">
+        <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>Zone Client</strong></a>
+        <select name="language" id="language" class="language">
+          <option value="#">FR</option>
+          <option value="http://www.londonworkexperience.com/">ES</option>
+          <option value="http://www.londonworkexperience.it/">IT</option>
+        </select>
+      </div>
+
+      <script>
+        $("#language").change(function(){
+          document.location.href = $(this).val();
+        });
+      </script>
+
+    </div><!-- upper-head -->
+
+    <div class="lower-head">
+      <div class="logo">
+        <a href="fr/index"><img src="img/logo.png" alt="Trabaja en londres"></a>
+        <div class="menu">
+          <button type="button" class="menu-btn-sm">menu <i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+        
+
+
+
+        <ul class="nav">
+    <li>
+      <a href="qui_sommes_nous">
+        A PROPOS DE NOUS
+      </a>
+    </li><li class="button-dropdown">
+      <a href="#" class="dropdown-toggle">
+        NOS SERVICES
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="drop" href="trabajo_mas_alojamiento_en_londres">
+            TRAVAIL + LOGEMENT A LONDRES
+          </a>
+          
+        </li>
+        <li>
+          <a class="drop" href="Cursos_de_Ingles_mas_alojamiento_en_londres">
+            COURS D’ANGLAIS + LOGEMENT A LONDRES
+          </a>
+        </li>
+        <li>
+          <a class="drop" href="Trabajar_en_hoteles_en_Londres">
+            TRAVAILLER EN HOTELERIE A LONDRES
+          </a>
+        </li>
+      </ul>
+    </li><li>
+      <a href="solicita_informacion">
+        CONTACTEZ NOUS
+      </a>
+    </li><li>
+          <a href="catalgo_trabajar_en_el_extranjero" class="orange">
+            TELECHARGER LA BROCHURE
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+    </div> <!-- lower head -->
+
+<!--dropdown menu scriptt-->
+    <script>
+      var mobileViewport = window.matchMedia("screen and (max-width: 600px)");
+      var btn = document.querySelector('.button-dropdown');
+      var dropdown = document.querySelector('.dropdown-menu');
+
+      if(mobileViewport.matches) {
+        var btn = document.querySelector('.button-dropdown');
+        var flag = true;
+
+        btn.addEventListener('click', function(flag){
+          return function(){
+            var dropdown = document.querySelector('.dropdown-menu');
+
+            if (flag) {
+              flag = false;
+              dropdown.classList.add('active');
+            }else {
+              flag = true;
+              dropdown.classList.remove('active');
+            }
+          }
+        }(true));
+      } else {
+        var btn = document.querySelector('.button-dropdown');
+        btn.addEventListener('mouseover', function(){
+
+            dropdown.classList.add('active');
+
+        });
+
+        btn.addEventListener('mouseout', function(){
+
+            dropdown.classList.remove('active');
+
+        });
+      };
+
+
+    </script>
+<!--hamburger menu script-->
+<script>
+
+  var button = document.querySelector('.menu-btn-sm');
+  var flag = true;
+
+  button.addEventListener('click', function(flag){
+    return function(){
+      var dropdown = document.querySelector('.nav');
+      if (flag) {
+        flag = false;
+        dropdown.style.display = 'unset';
+        button.lastElementChild.classList.remove('fa-bars');
+        button.lastElementChild.classList.add('fa-times-circle');
+      }else{
+        flag = true;
+        dropdown.style.display = 'none';
+        button.lastElementChild.classList.remove('fa-times-circle');
+        button.lastElementChild.classList.add('fa-bars');
+      }
+    }
+  }(true));
+
+</script>
+
+  </header>
+
+  <section class="one">
+    <div class="main-picture quienes-somos">
+
+      <div class="main-pic-header">
+
+        <div class="pic-qs">
+          <h1>QUI SOMMES NOUS</h1>
+          <img src="img/yellow-black-bar.png" alt="">
+        </div>
+      </div> <!--main-pic-header-->
+
+    </div><!--main-picture-->
+
+  </section><!--one-->
+
+  <section class="qs-two">
+    <article class="introduction">
+        <h1>QUI SOMMES NOUS</h1>
+        <img src="img/yellow-black-bar.png" alt="">
+        <p><strong>LondonWorkExperience</strong> est une agence de placement qui a pour but d’aider les personnes souhaitant s’installer à Londres (ou y vivre quelques mois ) en leur fournissant tous les éléments nécessaires pour une installation réussie !</p>
+        <p>Grâce à notre réseau anglais et notre savoir faire , nous avons été en mesure d’envoyer plus de 10 000 personnes  à Londres (toute nationalité confondues) en leur fournissant travail, logement et cours d’anglais !</p>
+        <p>Pour toute questions, n’hésitez pas à nous contacter à l’email suivant :  <a href="mailto:info.fr@londonworkexperience.com">info.fr@londonworkexperience.com</a></p>    
+    </article>
+
+    <aside class="horario">
+
+      <h1>Horario de la Agencia</h1>
+
+      <div class="horario-aside">
+        
+
+        <img src="img/clock.png" alt="">
+        <div class="horario-time">
+          <p>De <strong>Lunes</strong> a <strong>Jueves: </strong><strong>9:30</strong> a <strong>18:00</strong></p>
+          <p><strong>Viernes:</strong> <strong>9:30</strong> a <strong>16:00</strong></p>
+        </div>
+
+        <img src="img/mobile.png" alt="">
+        <div class="horario-mobile">
+          Teléfono gratuito <strong>900 831 750</strong>
+        </div>
+
+        <img src="img/envelope-black.png" alt="">
+        <div class="horario-envelope">
+          <a href="mailto:info@londonworkexperience.com">info@londonworkexperience.com</a>
+        </div>
+
+    </div><!--horario-aide-->
+
+    </aside>
+
+
+
+  </section><!--two-->
+
+  <section class="three">
+    <div class="three-head">
+        <h1>Encuentranos aquí</h1>
+        <img src="img/yellow-black-bar.png" alt="">
+    </div>
+    
+    
+    <div id="map"></div>
+
+    <aside class="horario">
+
+      <h1>Nuestra Ubicacion</h1>
+
+      <div class="horario-aside">
+
+        <img src="img/home2.png" alt="">
+        <div class="horario-time">
+          <p><strong>United Kingdom</strong></p>
+          <p><strong>19 Parmiter Street,</strong></p>
+          <p><strong>London</strong></p>
+          <p><strong>E2 9EF</strong></p>
+        </div>
+
+        </div>
+
+    </div><!--horario-aide-->
+
+    </aside>
+
+  </section>
+
+
+  <footer>
+
+    <div class="upper">
+        <nav>
+            <h4>menu</h4>
+            <ul class="nav">
+                <li>
+                  <a href="quienes-somos">
+                    quienes somos
+                  </a>
+                </li>
+                <li>
+                  <a href="#">nuestros servicios</a>
+                </li>
+                <li>
+                  <a href="trabajo_mas_alojamiento_en_londres">
+                         <span>&#9654;</span> TRABAJO + ALOJAMIENTO
+                  </a>
+                </li>
+                <li>
+                  <a href="Cursos_de_Ingles_mas_alojamiento_en_londres">
+                    <span>&#9654;</span> CURSO + ALOJAMIENTO
+                  </a>
+                </li>
+                <li>
+                  <a href="Trabajar_en_hoteles_en_Londres"><span>&#9654;</span> PROGRAMA DE HOTELES</a>
+              </li>
+                <li>
+                  <a href="solicita_informacion">contacta con nosotros</a>
+                </li>
+                <li><a href="catalgo_trabajar_en_el_extranjero" class="orange">Descarga nuestro Catálogo</a>
+                    </li>
+                    
+            </nav>
+      
+            <div class="about">
+              <img src="img/logo-white.png" alt="" class="logo">
+      
+              <p>Con London Work Experience, te garantizamos con un servicio Premium y es por eso que trabajamos en colaboración con la cámara de comercio española</p>
+
+              <img src="img/scc_logo_smallwhite.png" alt="" class="chamber">
+              
+            </div>
+      
+            <div class="facebook">
+              <h4>facebook</h4>
+                <iframe class="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flondonworkexperiencespain%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=2083873568515957" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+    </div>
+
+    <div class="lower">
+      <p>&copy;LondonWorkexperience Trabajo en Londres e Inglaterra 2018 Made by Tom Fraczek.</p>
+    </div>
+
+      
+  </footer>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJyGbfNpO2_wMd-fEWwRJNiDjxR6HuKEo&callback=initMap"
+  type="text/javascript"></script>
+
+  </body>
+</html>
