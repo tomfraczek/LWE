@@ -260,7 +260,7 @@ header{
 
 .home-page{
   position: absolute;
-  top: 134px;;
+  top: 136px;;
   background-color: rgba(0,0,0,.2);
 
   .main-pic-header{
@@ -947,7 +947,7 @@ header{
       text-decoration: none;
       font-family: 'Roboto Condensed';
       font-weight: bold;
-      box-shadow: 2px 2px 4px $primary;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     img{
@@ -1006,7 +1006,7 @@ header{
       text-decoration: none;
       font-family: 'Roboto Condensed';
       font-weight: bold;
-      box-shadow: 2px 2px 4px $primary;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
     img{
@@ -1062,7 +1062,6 @@ header{
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-template-rows: repeat(4, 1fr);
-        grid-row-gap: 2rem;
         align-items: flex-start;
 
         img{
@@ -1081,9 +1080,6 @@ header{
           img{
             width: 40%;
           }
-        p{
-          font-size: .8em;
-        }
       }
     }
 
@@ -1184,11 +1180,11 @@ header{
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
-      grid-row-gap: 2rem;
       align-items: center;
 
       .elegirnos-header{
-
+        align-self: start;
+        
         img{
           width: 50px;
           margin: 0;
@@ -1216,7 +1212,7 @@ header{
         }
 
         p{
-          font-size: .8em;
+          font-size: .9em;
           position: relative;
           bottom: 8px;
         }
@@ -2698,7 +2694,7 @@ footer{
       }
 
       p{
-        font-size: 1.2em;
+        font-size: 1.5em;
         margin-bottom: 1rem;
       }
     }
