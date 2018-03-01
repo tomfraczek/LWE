@@ -16,6 +16,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- jQuery -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+
   </head>
   <body>
 
@@ -46,11 +52,17 @@
       <div class="right-head">
         <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>zona cliente</strong></a>
         <select name="language" id="language" class="language">
-          <option value="espanhol">ES</option>
-          <option value="italian">IT</option>
-          <option value="franch">FR</option>
+          <option value="index"> ES</option>
+          <option value="it/index">IT</option>
+          <option value="fr/index">FR</option>
         </select>
       </div>
+
+      <script>
+        $("#language").change(function(){
+          document.location.href = $(this).val();
+        });
+      </script>
 
     </div><!-- upper-head -->
 
