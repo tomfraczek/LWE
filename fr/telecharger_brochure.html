@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agence de Placement Pour Francais à Londres - Brochure | London Work Experience</title>
+
+
+    <!-- FONTAWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <header>
+
+    <div class="upper-head">
+
+      <div class="left-head">
+        
+
+        <div class="contact">
+            <img src="img/auricular-phone-symbol-in-a-circle.png" alt="Trabaja en londres">
+            <div>
+              <p>Téléphone gratuit <strong>900 831 750</strong></p>
+            </div>
+
+              <img src="img/email.png" alt="Trabaja en londres">
+            <div>
+              <p>Contactez nous à: <strong><a href="mailto:info.fr@londonworkexperience.com">info.fr@londonworkexperience.com</a></strong></p>
+          </div>
+        </div>
+       
+        <div class="social">
+          
+        </div>
+      </div>
+
+      <div class="right-head">
+        <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>Zone Client</strong></a>
+        <select name="language" id="language" class="language">
+          <option value="#">FR</option>
+          <option value="http://www.londonworkexperience.com/">ES</option>
+          <option value="http://www.londonworkexperience.it/">IT</option>
+        </select>
+      </div>
+
+      <script>
+        $("#language").change(function(){
+          document.location.href = $(this).val();
+        });
+      </script>
+
+    </div><!-- upper-head -->
+
+    <div class="lower-head">
+      <div class="logo">
+        <a href="fr/index"><img src="img/logo.png" alt="Trabaja en londres"></a>
+        <div class="menu">
+          <button type="button" class="menu-btn-sm">menu <i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+        
+
+
+
+        <ul class="nav">
+    <li>
+      <a href="qui_sommes_nous">
+        A PROPOS DE NOUS
+      </a>
+    </li><li class="button-dropdown">
+      <a href="#" class="dropdown-toggle">
+        NOS SERVICES
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="drop" href="Travail_et_logement_a_londres">
+            TRAVAIL + LOGEMENT A LONDRES
+          </a>
+          
+        </li>
+        <li>
+          <a class="drop" href="cours_d'anglais_et_logement_londres">
+            COURS D’ANGLAIS + LOGEMENT A LONDRES
+          </a>
+        </li>
+        <li>
+          <a class="drop" href="progamme_hotellerie_Londres">
+            TRAVAILLER EN HOTELERIE A LONDRES
+          </a>
+        </li>
+      </ul>
+    </li><li>
+      <a href="solicita_informacion">
+        NOUS CONTACTER
+      </a>
+    </li><li>
+          <a href="contactez_nous" class="orange">
+            TELECHARGER NOTRE BROCHURE
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+    </div> <!-- lower head -->
+
+<!--dropdown menu scriptt-->
+    <script>
+      var mobileViewport = window.matchMedia("screen and (max-width: 600px)");
+      var btn = document.querySelector('.button-dropdown');
+      var dropdown = document.querySelector('.dropdown-menu');
+
+      if(mobileViewport.matches) {
+        var btn = document.querySelector('.button-dropdown');
+        var flag = true;
+
+        btn.addEventListener('click', function(flag){
+          return function(){
+            var dropdown = document.querySelector('.dropdown-menu');
+
+            if (flag) {
+              flag = false;
+              dropdown.classList.add('active');
+            }else {
+              flag = true;
+              dropdown.classList.remove('active');
+            }
+          }
+        }(true));
+      } else {
+        var btn = document.querySelector('.button-dropdown');
+        btn.addEventListener('mouseover', function(){
+
+            dropdown.classList.add('active');
+
+        });
+
+        btn.addEventListener('mouseout', function(){
+
+            dropdown.classList.remove('active');
+
+        });
+      };
+
+
+    </script>
+<!--hamburger menu script-->
+<script>
+
+  var button = document.querySelector('.menu-btn-sm');
+  var flag = true;
+
+  button.addEventListener('click', function(flag){
+    return function(){
+      var dropdown = document.querySelector('.nav');
+      if (flag) {
+        flag = false;
+        dropdown.style.display = 'unset';
+        button.lastElementChild.classList.remove('fa-bars');
+        button.lastElementChild.classList.add('fa-times-circle');
+      }else{
+        flag = true;
+        dropdown.style.display = 'none';
+        button.lastElementChild.classList.remove('fa-times-circle');
+        button.lastElementChild.classList.add('fa-bars');
+      }
+    }
+  }(true));
+
+</script>
+
+  </header>
+
+  
+  <section class="one">
+    <div class="main-picture catalogo">
+
+      <div class="main-pic-header">
+
+        <div class="pic-ca catalogo-header">
+          <h1>TOUT CE QUE DONT VOUS AVEZ BESOIN<br/>
+            DE SAVOIR CONCERNANT<br/>
+            VOTRE ARRIVE A LONDRES !</h1>
+          <p>Téléchargez notre brochure en remplissant le formulaire ci-dessous</p>
+
+          <form action="" method="">
+
+            <div>
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="user_name">
+            </div>
+
+            <div>
+              <label for="mail">Prénom</label>
+              <input type="text" id="mail" name="appelidos">
+            </div>
+
+            <div>
+              <label for="tel">Téléphone</label>
+              <input type="tel" id="tel" name="teléfono">
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="teléfono">
+            </div>
+
+
+              <button type="submit"><span>TELECHARGER</span> <span>&#9654;</span></button>
+
+
+          </form>
+
+        </div>
+
+      </div> <!--main-pic-header-->
+
+    </div><!--main-picture-->
+
+  </section><!--one-->
+
+
+
+  <footer>
+
+    <div class="upper">
+        <nav>
+            <h4>menu</h4>
+            <ul class="nav">
+                <li>
+                  <a href="qui_sommes_nous">
+                    A PROPOS DE NOUS
+                  </a>
+                </li>
+                <li>
+                  <a href="#">NOS SERVICES</a>
+                </li>
+                <li>
+                  <a href="Travail_et_logement_a_londres">
+                         <span>&#9654;</span> TRAVAIL + LOGEMENT A LONDRES
+                  </a>
+                </li>
+                <li>
+                  <a href="cours_d'anglais_et_logement_londres">
+                    <span>&#9654;</span> COURS D’ANGLAIS + LOGEMENT A LONDRES
+                  </a>
+                </li>
+                <li>
+                  <a href="progamme_hotellerie_Londres"><span>&#9654;</span> TRAVAIL + LOGEMENT A LONDRES</a>
+              </li>
+                <li>
+                  <a href="contactez_nous">NOUS CONTACTER</a>
+                </li>
+                <li><a href="telecharger_brochure" class="orange">TELECHARGER NOTRE BROCHURE</a>
+                    </li>
+                    
+            </nav>
+      
+            <div class="about">
+              <img src="img/logo-white.png" alt="" class="logo">
+            </div>
+      
+            <div class="facebook">
+              <h4>facebook</h4>
+                <iframe class="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flondonworkexperiencespain%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=2083873568515957" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+    </div>
+
+    <div class="lower">
+      <p>&copy;LondonWorkexperience Trabajo en Londres e Inglaterra 2018 Made by Tom Fraczek.</p>
+    </div>
+
+      
+  </footer>
+
+  </body>
+</html>

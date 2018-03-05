@@ -2,13 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=description content="London Work Experience est une agence de placement qui a pour but d’aider les francais 
-    à s’installer à Londres (ou y vivre quelques mois ) en leur fournissant travail, logement et cours d'anglais si nécessaire!">
-    <meta name=keywords content="">
+    <meta name="title" content="Contact London Work Experience - Emploi à Londres, jobs en angleterre">
+		<meta name="description" content="Si vous voulez travailler à Londres, contactez-nous pour trouver un emploi à Londres ou Travailler en Angleterre">
+    <meta name="keywords" content="travailler à londres, emplois, londres, angleterre, travail, jobs, emploi, London Work Experience, London">
 
-    <title>Agence de Placement Londres | London Work Experience</title>
+
+    <title>LondonWork EXPERIENCE</title>
+
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css" />
 
 
     <!-- FONTAWESOME -->
@@ -17,20 +19,27 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
 
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
 
-<script>
-function initMap() {
-        var uluru = {lat: 51.532165, lng: -0.056140};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 18,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-</script>
+    
+
+    <script>
+      $( function() {
+    $( "#nacimiento" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  } );
+
+  $( function() {
+    $( "#aproximada" ).datepicker({
+      numberOfMonths: 2,
+      showButtonPanel: false
+    });
+  } );
+  </script>
+    
   </head>
   <body>
 
@@ -196,91 +205,114 @@ function initMap() {
     </header>
 
   <section class="one">
-    <div class="main-picture quienes-somos">
 
-      <div class="main-pic-header">
-
-        <div class="pic-qs">
-          <h1>QUI SOMMES NOUS</h1>
-          <img src="img/yellow-black-bar.png" alt="">
-        </div>
-      </div> <!--main-pic-header-->
+    <div class="main-picture contact-main">
 
     </div><!--main-picture-->
 
-  </section><!--one-->
-
-  <section class="qs-two">
-    <article class="introduction">
-        <h1>QUI SOMMES NOUS</h1>
-        <img src="img/yellow-black-bar.png" alt="">
-        <p><strong>LondonWorkExperience</strong> est une agence de placement qui a pour but d’aider les personnes souhaitant s’installer à Londres (ou y vivre quelques mois ) en leur fournissant tous les éléments nécessaires pour une installation réussie !</p>
-        <p>Grâce à notre réseau anglais et notre savoir faire , nous avons été en mesure d’envoyer plus de 10 000 personnes  à Londres (toute nationalité confondues) en leur fournissant travail, logement et cours d’anglais !</p>
-        <p>Pour toute questions, n’hésitez pas à nous contacter à l’email suivant :  <a href="mailto:info.fr@londonworkexperience.com">info.fr@londonworkexperience.com</a></p>    
-    </article>
-
-    <aside class="horario">
-
-      <h1>Horaire de l’agence</h1>
-
-      <div class="horario-aside">
-        
-
-        <img src="img/clock.png" alt="">
-        <div class="horario-time">
-          <p>Du <strong>Lundi</strong> au <strong>Jeudi: </strong><strong>9h30</strong> a <strong>18h00</strong></p>
-          <p><strong>Vendredi:</strong> <strong>9h30</strong> a <strong>16h00</strong></p>
-        </div>
-
-        <img src="img/mobile.png" alt="">
-        <div class="horario-mobile">
-          Téléphone gratuit: <strong>900 831 750</strong>
-        </div>
-
-        <img src="img/envelope-black.png" alt="">
-        <div class="horario-envelope">
-          <a href="mailto:info@londonworkexperience.com">info@londonworkexperience.com</a>
-        </div>
-
-    </div><!--horario-aide-->
-
-    </aside>
-
-
-
-  </section><!--two-->
-
-  <section class="three">
-    <div class="three-head">
-        <h1>Où nous trouver</h1>
-        <img src="img/yellow-black-bar.png" alt="">
+    <div class="under-pic informacion">
+      <h1>SOLICITA INFORMACIÓN</h1>
+      <p>Para contactar con nosotros por favor rellena el formulario.</p>
+      <img src="img/yellow-black-bar.png" alt="">
     </div>
-    
-    
-    <div id="map"></div>
 
-    <aside class="horario">
 
-      <h1>Adresse de l'agence</h1>
+    <div class="main-solicita">
 
-      <div class="horario-aside">
+      <form action="" class="contact-form">
 
-        <img src="img/home2.png" alt="">
-        <div class="horario-time">
-          <p><strong>United Kingdom</strong></p>
-          <p><strong>19 Parmiter Street,</strong></p>
-          <p><strong>London</strong></p>
-          <p><strong>E2 9EF</strong></p>
+        <div class="form-el">
+          <label for="nombre">Nom:</label>
+          <input type="text" name="nombre" value="">
         </div>
 
+        <div class="form-el">
+          <label for="tel">Téléphone:</label>
+          <input type="tel" name="tel" value="">
         </div>
 
-    </div><!--horario-aide-->
+        <div class="form-el">
+          <label for="apellido">Prénom:</label>
+          <input type="text" name="apellido" value="">
+        </div>
 
-    </aside>
+        <div class="form-el">
+          <label for="naciamento">Programme:</label>
+          <select name="naciamento">
+            <option value="curso + alojamiento">CURSO + ALOJAMIENTO</option>
+            <option value="trabajo + alojamiento">TRABAJO + ALOJAMIENTO</option>
+            <option value="programa de hoteles">PROGRAMA DE HOTELES</option>
+          </select>
+        </div>
 
-  </section>
+        <div class="form-el date">
+          <label for="from">Date de naissance:</label>
+          <input type="text" id="nacimiento" name="from">
+        </div>
 
+        <div class="form-el date">
+          <label for="to">Date d'arrivée approximative:</label>
+          <input type="text" id="aproximada" name="to">
+        </div>
+
+        <div class="form-el">
+          <label for="email">Email:</label>
+          <input type="email" name="email" value="">
+        </div>
+
+        <div class="form-el msg">
+          <label for="msg">Message:</label>
+          <textarea name="msg"></textarea>
+        </div>
+
+        <div class="form-el radio">
+          <p>Etes-vous un ressortissant de l'union européenne?</p>
+          <div>
+            <input type="radio" id="contactChoice1"
+             name="contact">
+            <label for="contactChoice1">oui</label>
+
+            <input type="radio" id="contactChoice2"
+             name="contact" checked>
+            <label for="contactChoice2">non</label>
+          </div>
+        </div>
+
+        <button type="submit" name="button" class="form-btn">Envoyer información</button>
+
+      </form>
+
+      
+
+      <div class="solicita-right">
+        <p>O contacta conmigo directamente, estaré encantado de ayudarte!</p>
+
+        <img src="img/stock-photo-portrait-of-the-same-man-in-different-style-clothes-isolated-on-a-white-background-720748834.jpg" alt="">
+
+        <div class="two-box">
+          <h4 class="nome"><strong>Sergio Galdos</strong></h4>
+          <span class="tel">
+            <span><img src="img/phone-symbol-of-an-auricular-inside-a-circle.png" alt=""></i></span>
+          <strong>Tel gratuito: 900 831 750</strong>
+          </span>
+          
+          <span class="wup">
+            <span><img src="img/whatsapp.png" alt=""></span>
+            <strong> +34 626 284 526</strong>
+          </span>
+
+          <span class="mail">
+              <span><i class="far fa-envelope"></i></span>
+              <strong><a href="mailto:info@londonworkexperience.com">info@londonworkexperience.com</a></strong>
+          </span>
+                    
+                
+        </div>
+
+    </div><!--main-solicita-->
+
+
+  </section><!--one-->
 
   <footer>
 
@@ -334,9 +366,6 @@ function initMap() {
       
   </footer>
 
-
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJyGbfNpO2_wMd-fEWwRJNiDjxR6HuKEo&callback=initMap"
-  type="text/javascript"></script>
-
+    
   </body>
 </html>

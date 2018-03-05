@@ -27,12 +27,12 @@
           <div class="contact">
               <img src="img/auricular-phone-symbol-in-a-circle.png" alt="Trabaja en londres">
               <div>
-                <p>Tel&#233;fono gratuito <strong>900 831 750</strong></p>
+                <p>Téléphone gratuit <strong>900 831 750</strong></p>
               </div>
   
                 <img src="img/email.png" alt="Trabaja en londres">
               <div>
-                <p>Envianos un e-mail a: <strong><a href="mailto:info@londonworkexperience.com">info@londonworkexperience.com</a></strong></p>
+                <p>Contactez nous à: <strong><a href="mailto:info.fr@londonworkexperience.com">info.fr@londonworkexperience.com</a></strong></p>
             </div>
           </div>
          
@@ -42,19 +42,25 @@
         </div>
   
         <div class="right-head">
-          <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>zona cliente</strong></a>
+          <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>Zone Client</strong></a>
           <select name="language" id="language" class="language">
-            <option value="espanhol">ES</option>
-            <option value="italian">IT</option>
-            <option value="franch">FR</option>
+            <option value="#">FR</option>
+            <option value="http://www.londonworkexperience.com/">ES</option>
+            <option value="http://www.londonworkexperience.it/">IT</option>
           </select>
         </div>
+  
+        <script>
+          $("#language").change(function(){
+            document.location.href = $(this).val();
+          });
+        </script>
   
       </div><!-- upper-head -->
   
       <div class="lower-head">
         <div class="logo">
-          <a href="index"><img src="img/logo.png" alt="Trabaja en londres"></a>
+          <a href="fr/index"><img src="img/logo.png" alt="Trabaja en londres"></a>
           <div class="menu">
             <button type="button" class="menu-btn-sm">menu <i class="fas fa-bars"></i></button>
           </div>
@@ -65,38 +71,38 @@
   
           <ul class="nav">
       <li>
-        <a href="quienes-somos">
-          quienes somos
+        <a href="qui_sommes_nous">
+          A PROPOS DE NOUS
         </a>
       </li><li class="button-dropdown">
         <a href="#" class="dropdown-toggle">
-          nuestros servicios
+          NOS SERVICES
         </a>
         <ul class="dropdown-menu">
           <li>
-            <a class="drop" href="trabajo_mas_alojamiento_en_londres">
-                  TRABAJO + ALOJAMIENTO EN LONDRES
+            <a class="drop" href="Travail_et_logement_a_londres">
+              TRAVAIL + LOGEMENT A LONDRES
             </a>
             
           </li>
           <li>
-            <a class="drop" href="Cursos_de_Ingles_mas_alojamiento_en_londres">
-              CURSO + ALOJAMIENTO EN LONDRES
+            <a class="drop" href="cours_d'anglais_et_logement_londres">
+              COURS D’ANGLAIS + LOGEMENT A LONDRES
             </a>
           </li>
           <li>
-            <a class="drop" href="Trabajar_en_hoteles_en_Londres">
-              PROGRAMA DE HOTELES EN LONDRES
+            <a class="drop" href="progamme_hotellerie_Londres">
+              TRAVAILLER EN HOTELERIE A LONDRES
             </a>
           </li>
         </ul>
       </li><li>
         <a href="solicita_informacion">
-          contacta con nosotros
+          NOUS CONTACTER
         </a>
       </li><li>
-            <a href="catalgo_trabajar_en_el_extranjero" class="orange">
-              descarga nuestro catalogo
+            <a href="contactez_nous" class="orange">
+              TELECHARGER NOTRE BROCHURE
             </a>
           </li>
         </ul>
@@ -153,7 +159,6 @@
   
     button.addEventListener('click', function(flag){
       return function(){
-        var button = document.querySelector('.menu-btn-sm');
         var dropdown = document.querySelector('.nav');
         if (flag) {
           flag = false;
@@ -181,9 +186,8 @@
         <div class="pic-ca">
           <h1>TRAVAIL + LOGEMENT A LONDRES</h1>
           <img src="img/yellow-black-bar.png" alt="">
-          <p>Trouvez un travail en restauration en moins de 15 jours grâce à notre suivi et nos conseils!<br/>
-            Réservez également votre logement avant même votre arrivée à Londres afin de vous concentrer<br/>
-            100% dans votre recherche de travail !</p>
+          <p>Trouvez un travail en restauration en moins de <br/>15 jours grâce à notre suivi et nos conseils!<br/>
+            Réservez également votre logement avant même <br/>votre arrivée à Londres</p>
         </div>
       </div> <!--main-pic-header-->
 
@@ -241,24 +245,21 @@
 
     <article class="trabajo">
 
-        <h2>London Work Experience est une agence dont le but est d’aider les français à trouver un travail en restauration en moins de 15 jours !</h2>
-
-        
-
       <div class="trabajo-left">
 
-        <h3>Pour cela, les candidats seront envoyés une fois par jour à un entretien jusqu'à obtention d’un travail</h3>
+        <h3>Un travail en moins de 15 jours a Londres !</h3>
         
         <img class="bar" src="img/yellow-black-bar.png" alt="">
 
-                <p>Nuestro programa te ayuda a  encontrar trabajo en la hostelería y alojamiento en Londres en menos de 15 días!</p>
-                    <p>Nuestro equipo te asiste desde el inicio en español reservando tu alojamiento antes de tu llegada. Ofrecemos varias opciones para que te sientas como en casa desde el primer momento.</p>
-                     <p>El servicio de trabajo te garantiza una entrevista al día, que te permitirá aumentar las probabilidades de conseguir el trabajo deseado y además, nuestro asesoramiento y asistencia tiene una duración de 3 meses</p>
+                <p>London Work Experience est une agence dont le but est d’aider les français à trouver un travail en restauration en moins de 15 jours !</p>
+                    <p>Pour augmenter les chances de ses candidats, London Work Experience possède un réseau professionnel important qui lui permet d’envoyer tous les jours ses candidats passer des entretiens jusqu'à l’obtention d’un travail !</p>
+                     <p>Les candidats sont ainsi suivis du début jusqu'à la fin, avec de nombreux retours concernant leur entretiens, leur attitudes et aptitudes.</p>
+                     <p>Nos candidats bénéficient également de nombreux autres services tel que la traduction du CV ainsi qu’une aide concernant les démarches administratives !</p>
 
       </div>
 
       <div class="ca-gallery">
-          <h3>Voici une liste (non exhaustive) des placements réalisés l’année dernière</h3>
+          <h3>Exemple de job</h3>
           <img class="bar" src="img/yellow-black-bar.png" alt="">
 
         <div class="main gal-single">
@@ -399,7 +400,7 @@
 
           <div class="item">
             <img src="img/alojamiento-icon9.png" alt="">
-            <p>Ambiente</p>
+            <p>Quartier sécurisé</p>
           </div>
 
         </div><!--localizacion-->
@@ -407,7 +408,7 @@
         <div class="incluyen">
 
           <div class="local-header">
-            <strong><span>&#9654; </span> Les maisons sont composées de:</strong>
+            <strong><span>&#9654; </span> Les maisons sont composés de:</strong>
           </div>
 
           <div class="item">
@@ -441,12 +442,12 @@
             <td colspan=""><strong>£130 - £160 par semaine</strong></td>
           </tr>
           <tr>
-            <td class="edit"><img src="img/alojamiento-icon11.png" alt="">Chambre à partagée</td>
+            <td class="edit"><img src="img/alojamiento-icon11.png" alt="">Chambre à partager</td>
             <td colspan=""><strong>£95 - £130 par semaine</strong></td>
 
           </tr>
           <tr>
-            <td colspan="2" class="add">(camas separadas o literas)</td>
+            <td colspan="2" class="add">(lits séparés ou superposés)</td>
           </tr>
         </table>
 
@@ -530,7 +531,7 @@
           <div class="incluyen">
 
             <div class="incluyen-header">
-              <strong><span>&#9654; </span> Les appartements sont composées de:</strong>
+              <strong><span>&#9654; </span> Les appartements sont composés de:</strong>
             </div>
 
             <div class="item">
@@ -563,7 +564,7 @@
 
             <div class="item">
               <img src="img/alojamiento-icon11.png" alt="">
-              <p><strong>Chambre à partagée</strong> (2 lits séparés)</p>
+              <p><strong>Chambre à partager</strong> (2 lits séparés)</p>
             </div>
 
             <div class="item">
@@ -604,7 +605,7 @@
           <td colspan=""><strong>£242</strong><span class="semana"> par semaine</span></td>
         </tr>
         <tr>
-          <td class="edit"><img src="img/alojamiento-icon11.png" alt="">Chambre à partagée (2 lits séparés)</td>
+          <td class="edit"><img src="img/alojamiento-icon11.png" alt="">Chambre à partager (2 lits séparés)</td>
           <td colspan=""><strong>£148</strong><span class="semana"> par semaine</span></td>
         </tr>
         <tr>
@@ -669,7 +670,7 @@
     <article class="tarifas-left">
 
       <div class="lefter">
-        <h1>Precio del Programa</h1>
+        <h1>Prix du programme</h1>
         <img src="img/black-bar.png" alt="">
         <span>495 €</span>
       </div>
@@ -679,29 +680,28 @@
         <div class="upper">
 
           <div class="upper-left">
-            <h1>INSCRIPCIÓN</h1>
+            <h1>INSCRIPTION</h1>
             <img src="img/yellow-black-bar.png" alt="">
             <span>120€</span>
           </div>
 
           <div class="upper-right">
-            <p>Esta cantidad es para cubrir tasas administrativas.</p>
-            <p>Tienes un año desde el día en que haces el pago<br/>
-de la inscripción para venir a Londres.</p>
+            <p>Frais d'inscription pour couvrir tous les frais administratifs</p>
+            <p>Une fois l'inscription payée, les candidats ont un an pour venir à Londres et commencer le programme</p>
           </div>
 
         </div><!--upper-->
 
         <div class="lower">
           <div class="lower-left">
-            <h1>PRECIO DEL<br/>SERVICIO</h1>
+            <h1>PRIX DU<br/>SERVICE</h1>
             <img src="img/yellow-black-bar.png" alt="">
             <span>375€</span>
           </div>
 
           <div class="lower-right">
-            <p>Se puede pagar por adelantado o en a tu<br/>
-llegada en nuestra oficina en Londres.</p>
+            <p>Les candidats peuvent soit régler les frais <br/>
+              de services (en ligne) avant leurs arrivées à Londres<br/> ou soit payer une fois arrivées au sein de notre agence</p>
           </div>
         </div>
 
@@ -715,12 +715,12 @@ llegada en nuestra oficina en Londres.</p>
         <img src="img/stock-photo-portrait-of-the-same-man-in-different-style-clothes-isolated-on-a-white-background-720748834.jpg" alt="">
 
         <div class="info-header">
-          <h1>¿QUE QUIERES <br/>HACER?</h1>
-          <p>¿Solicitar más información<br />o descargar catalogo?</p>
+          <h1>QUE SOUHAITEZ<br/>VOUS FAIRE ?</h1>
+          <p>Nous contacter ou<br />télécharger notre brochure?</p>
         </div>
 
-        <a href="solicita_informacion" class="btn-dark">MÁS INFORMACIÓN <span>&#9654;</span></a>
-        <a href="catalgo_trabajar_en_el_extranjero" class="btn-yellow">DESCARGA CATALOGO <span>&#9654;</span></a>
+        <a href="solicita_informacion" class="btn-dark">NOUS CONTACTER <span>&#9654;</span></a>
+        <a href="catalgo_trabajar_en_el_extranjero" class="btn-yellow">VOIR BROCHURE <span>&#9654;</span></a>
 
       </div><!--info-content-->
 
@@ -766,41 +766,36 @@ var tarifasCnt = document.querySelector('.tarifas');
           <h4>menu</h4>
           <ul class="nav">
               <li>
-                <a href="quienes-somos">
-                  quienes somos
+                <a href="qui_sommes_nous">
+                  A PROPOS DE NOUS
                 </a>
               </li>
               <li>
-                <a href="#">nuestros servicios</a>
+                <a href="#">NOS SERVICES</a>
               </li>
               <li>
-                <a href="trabajo_mas_alojamiento_en_londres">
-                       <span>&#9654;</span> TRABAJO + ALOJAMIENTO
+                <a href="Travail_et_logement_a_londres">
+                       <span>&#9654;</span> TRAVAIL + LOGEMENT A LONDRES
                 </a>
               </li>
               <li>
-                <a href="Cursos_de_Ingles_mas_alojamiento_en_londres">
-                  <span>&#9654;</span> CURSO + ALOJAMIENTO
+                <a href="cours_d'anglais_et_logement_londres">
+                  <span>&#9654;</span> COURS D’ANGLAIS + LOGEMENT A LONDRES
                 </a>
               </li>
               <li>
-                <a href="Trabajar_en_hoteles_en_Londres"><span>&#9654;</span> PROGRAMA DE HOTELES</a>
+                <a href="progamme_hotellerie_Londres"><span>&#9654;</span> TRAVAIL + LOGEMENT A LONDRES</a>
             </li>
               <li>
-                <a href="solicita_informacion">contacta con nosotros</a>
+                <a href="contactez_nous">NOUS CONTACTER</a>
               </li>
-              <li><a href="catalgo_trabajar_en_el_extranjero" class="orange">Descarga nuestro Catálogo</a>
+              <li><a href="telecharger_brochure" class="orange">TELECHARGER NOTRE BROCHURE</a>
                   </li>
                   
           </nav>
     
           <div class="about">
             <img src="img/logo-white.png" alt="" class="logo">
-    
-            <p>Con London Work Experience, te garantizamos con un servicio Premium y es por eso que trabajamos en colaboración con la cámara de comercio española</p>
-
-            <img src="img/scc_logo_smallwhite.png" alt="" class="chamber">
-            
           </div>
     
           <div class="facebook">
@@ -816,5 +811,5 @@ var tarifasCnt = document.querySelector('.tarifas');
     
 </footer>
 
-  </body>
+</body>
 </html>

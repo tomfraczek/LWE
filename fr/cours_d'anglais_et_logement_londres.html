@@ -26,12 +26,12 @@
           <div class="contact">
               <img src="img/auricular-phone-symbol-in-a-circle.png" alt="Trabaja en londres">
               <div>
-                <p>Tel&#233;fono gratuito <strong>900 831 750</strong></p>
+                <p>Téléphone gratuit <strong>900 831 750</strong></p>
               </div>
   
                 <img src="img/email.png" alt="Trabaja en londres">
               <div>
-                <p>Envianos un e-mail a: <strong><a href="mailto:info@londonworkexperience.com">info@londonworkexperience.com</a></strong></p>
+                <p>Contactez nous à: <strong><a href="mailto:info.fr@londonworkexperience.com">info.fr@londonworkexperience.com</a></strong></p>
             </div>
           </div>
          
@@ -41,19 +41,25 @@
         </div>
   
         <div class="right-head">
-          <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>zona cliente</strong></a>
+          <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>Zone Client</strong></a>
           <select name="language" id="language" class="language">
-            <option value="espanhol">ES</option>
-            <option value="italian">IT</option>
-            <option value="franch">FR</option>
+            <option value="#">FR</option>
+            <option value="http://www.londonworkexperience.com/">ES</option>
+            <option value="http://www.londonworkexperience.it/">IT</option>
           </select>
         </div>
+  
+        <script>
+          $("#language").change(function(){
+            document.location.href = $(this).val();
+          });
+        </script>
   
       </div><!-- upper-head -->
   
       <div class="lower-head">
         <div class="logo">
-          <a href="index"><img src="img/logo.png" alt="Trabaja en londres"></a>
+          <a href="fr/index"><img src="img/logo.png" alt="Trabaja en londres"></a>
           <div class="menu">
             <button type="button" class="menu-btn-sm">menu <i class="fas fa-bars"></i></button>
           </div>
@@ -64,38 +70,38 @@
   
           <ul class="nav">
       <li>
-        <a href="quienes-somos">
-          quienes somos
+        <a href="qui_sommes_nous">
+          A PROPOS DE NOUS
         </a>
       </li><li class="button-dropdown">
         <a href="#" class="dropdown-toggle">
-          nuestros servicios
+          NOS SERVICES
         </a>
         <ul class="dropdown-menu">
           <li>
-            <a class="drop" href="trabajo_mas_alojamiento_en_londres">
-                  TRABAJO + ALOJAMIENTO EN LONDRES
+            <a class="drop" href="Travail_et_logement_a_londres">
+              TRAVAIL + LOGEMENT A LONDRES
             </a>
             
           </li>
           <li>
-            <a class="drop" href="Cursos_de_Ingles_mas_alojamiento_en_londres">
-              CURSO + ALOJAMIENTO EN LONDRES
+            <a class="drop" href="cours_d'anglais_et_logement_londres">
+              COURS D’ANGLAIS + LOGEMENT A LONDRES
             </a>
           </li>
           <li>
-            <a class="drop" href="Trabajar_en_hoteles_en_Londres">
-              PROGRAMA DE HOTELES EN LONDRES
+            <a class="drop" href="progamme_hotellerie_Londres">
+              TRAVAILLER EN HOTELERIE A LONDRES
             </a>
           </li>
         </ul>
       </li><li>
         <a href="solicita_informacion">
-          contacta con nosotros
+          NOUS CONTACTER
         </a>
       </li><li>
-            <a href="catalgo_trabajar_en_el_extranjero" class="orange">
-              descarga nuestro catalogo
+            <a href="contactez_nous" class="orange">
+              TELECHARGER NOTRE BROCHURE
             </a>
           </li>
         </ul>
@@ -152,7 +158,6 @@
   
     button.addEventListener('click', function(flag){
       return function(){
-        var button = document.querySelector('.menu-btn-sm');
         var dropdown = document.querySelector('.nav');
         if (flag) {
           flag = false;
@@ -180,7 +185,7 @@
         <div class="pic-ca">
           <h1>COURS ET LOGEMENT A LONDRES</h1>
           <img src="img/yellow-black-bar.png" alt="">
-          <p>Grace à nos cours variés, apprenez rapidement l’anglais tout en vivant dans la résidence de l’école<br/>
+          <p>Grace à nos cours variés, apprenez rapidement l’anglais<br/> tout en vivant dans la résidence de l’école<br/>
                 (située dans l’école même !)</p>
         </div>
       </div> <!--main-pic-header-->
@@ -249,8 +254,8 @@
         <h2>BETHNAL STUDENT ACADEMY</h2>
         <img src="img/yellow-black-bar.png" alt="">
         <p>London Work Experience possède également une école d’anglais qui a pour but d’aider les français à progresser rapidement en anglais</p>
-        <p>Notre école propose des cours allant de 9h à 25h par semaine, des cours individuelles ainsi que des cours spécialement conçus pour aider les étudiants désirants passer des examens d’anglais ( TOEIC, IELTS etc…)</p>
-        <p>Notre école se situe en plein centre est de Londres, tout prés des quartiers festifs de shoreditch et hackney ! Elle est également située au rez de chaussée de notre résidence étudiante ; ceux qui permets à nos étudiants de se concentrer pleinement sur leurs cours d’anglais !</strong></p>
+        <p>Notre école propose des cours allant de 9h à 25h par semaine, des cours individuels ainsi que des cours spécialement conçus pour aider les étudiants désirants passer des examens d’anglais ( TOEIC, IELTS etc…)</p>
+        <p>Notre école se situe en plein centre est de Londres, tout prés des quartiers festifs de shoreditch et hackney ! Elle est également située au rez de chaussée de notre résidence étudiante ; ce qui permet à nos étudiants de se concentrer pleinement sur leurs cours d’anglais !</strong></p>
       </div>
 
       <div class="ca-gallery">
@@ -320,7 +325,7 @@
 
     <article class="cdi-header">
       <h1><strong>Nous proposons des cours d’anglais pour tous niveaux</strong></h1>
-      <p>De 9h à 25h par semaine, les élèves sont libres de choisir leur rythme d’apprentissage. Nous proposons également des  cours individuelles ainsi que des cours spécialement conçus pour aider les étudiants a préparer leur examens d’anglais (TOEIC, IELTS etc…)</p>
+      <p>De 9h à 25h par semaine, les élèves sont libres de choisir leur rythme d’apprentissage. Nous proposons également des  cours individuels ainsi que des cours spécialement conçus pour aider les étudiants à préparer leur examens d’anglais (TOEIC, IELTS etc…)</p>
 
       <img src="img/yellow-black-bar.png" alt="">
 
@@ -343,7 +348,7 @@
 
     <button type="button" class="cdi-link">
       <div>
-        <span>Voir détailles des cours</span> <span class="arrow">&#9654;</span>
+        <span>Voir détails des cours</span> <span class="arrow">&#9654;</span>
       </div>
     </button>
         </div><!--cdi-par-->
@@ -371,15 +376,15 @@
           </tr>
           <tr>
             <th>20 heures <br/>par samaine</th>
-            <td>Du lundi au vendredi: de 8.45 à 13.40 <br/><span>(avec 5 minutes de pause, 10 min de pause et 40 min pour manger)</span></td>
+            <td>Du lundi au vendredi: de 8.45 à 13.40 <br/><span>(avec 5 minutes de pause, 10 min de pause et 40 min Pour manger)</span></td>
           </tr>
           <tr>
             <th>25 heures <br/>par samaine</th>
-            <td>Du lundi au vendredi: de 8.45 à 14.45 <br/><span>(avec 2 x 5 min de pause, 10 min de pause et 40 min. por mager)</span></td>
+            <td>Du lundi au vendredi: de 8.45 à 14.45 <br/><span>(avec 2 x 5 min de pause, 10 min de pause et 40 min. Pour manger)</span></td>
           </tr>
           <tr style="border:none;">
             <th>25 PLUS heures <br/>par samaine</th>
-            <td>Du lundi au vendredi: de 8.45 a 14.45 <br/><span>(avec 2 x 5 min de pause, 10 min de pause et 40 min. por mager)</span><br/>+ 5 hueres de leçon privées</td>
+            <td>Du lundi au vendredi: de 8.45 à 14.45 <br/><span>(avec 2 x 5 min de pause, 10 min de pause et 40 min. Pour manger)</span><br/>+ 5 heures de leçon privées</td>
           </tr>
           <tr>
             <th></th>
@@ -401,7 +406,7 @@
           <p>Les cours « Académiques » ont été spécialement mis en place pour aider les étudiants à préparer des examens d’anglais (type TOEFL, TOEIC, IELTS…). qui sont très souvent demandés par les universités et entreprise anglaises. Pour accéder à ces cours, il est généralement recommandé aux étudiants de posséder un niveau d’ anglais intermédiaire voir plus.</p>
     <button type="button" class="cdi-link">
       <div>
-        <span>Voir détailles des cours</span> <span class="arrow">&#9654;</span>
+        <span>Voir détails des cours</span> <span class="arrow">&#9654;</span>
       </div>
     </button>
   </div><!--cdi-par-->
@@ -418,13 +423,13 @@
           </tr>
           <tr>
               <th>25 heures <br/>par samaine</th>
-              <td>Du lundi au vendredi: de 8.45 a 14.45 <br/><span>(avec 2 x 5 min de pause, 10 min de pause et 40 min. por mager)</span><br/>
+              <td>Du lundi au vendredi: de 8.45 a 14.45 <br/><span>(avec 2 x 5 min de pause, 10 min de pause et 40 min. Pour manger)</span><br/>
                 8:45 - 12:00 General English<br/>
                 12:40 - 14:45 Academic Skills</td>
             </tr>
             <tr style="border:none;">
               <th>25 PLUS heures <br/>par samaine</th>
-              <td>Du lundi au vendredi: de 8.45 a 14.45 <br/><span>(avec 2 x 5 min de pause, 10 min de pause et 40 min. por mager)</span><br/>+ 5 hueres de leçon privées<br/>
+              <td>Du lundi au vendredi: de 8.45 a 14.45 <br/><span>(avec 2 x 5 min de pause, 10 min de pause et 40 min. Pour manger)</span><br/>+ 5 heures de leçon privées<br/>
                 8:45 - 12:00 General English<br/>
                 12:40 - 14:45 Academic Skills<br/>
                 15:00 - 17:30 One-to-one (deux jours par semaine)
@@ -449,7 +454,7 @@
           <p>Si vous êtes une personne très occupée ou si vous souhaitez améliorer rapidement votre niveau, les cours individuels (1 professeur et 1 élève) sont la meilleure option. Réservez autant d’heures que vous le souhaitez. Les cours personnalisés sont adaptés aux personnes ayant certains objectifs et connaissant leurs points faibles. </p>
     <button type="button" class="cdi-link">
       <div>
-        <span>Voir détailles des cours</span> <span class="arrow">&#9654;</span>
+        <span>Voir détails des cours</span> <span class="arrow">&#9654;</span>
       </div>
     </button>
         </div><!--cdi-par-->
@@ -585,7 +590,7 @@ console.log(dropdown);
           <div class="incluyen">
 
             <div class="incluyen-header">
-              <strong><span>&#9654; </span> Les appartements sont composées de:</strong>
+              <strong><span>&#9654; </span> Les appartements sont composés de:</strong>
             </div>
 
             <div class="item">
@@ -657,7 +662,7 @@ console.log(dropdown);
 
     <article class="compartida">
 
-      <h1><strong>Option 2: Colocation a Londres</strong></h1>
+      <h1><strong>Option 2: Colocation à Londres</strong></h1>
 
       <div class="compartida-left">
 
@@ -698,7 +703,7 @@ console.log(dropdown);
 
           <div class="item">
             <img src="img/alojamiento-icon9.png" alt="">
-            <p>Barrios residenciales</p>
+            <p>Quartier sécurisé</p>
           </div>
 
         </div><!--localizacion-->
@@ -706,7 +711,7 @@ console.log(dropdown);
         <div class="incluyen">
 
           <div class="local-header">
-            <strong><span>&#9654; </span> Les maisons sont composées de:</strong>
+            <strong><span>&#9654; </span> Les maisons sont composés de:</strong>
           </div>
 
           <div class="item">
@@ -849,8 +854,8 @@ console.log(dropdown);
           </tr>
         </table>
 
-        <p>* Para los cursos de 9 horas, los estudiantes son libres de elegir 3 días de clase entre lunes y viernes.</p>
-        <p>** Los cursos 25 PLUS se componen de 25 horas de Inglés General + 5 horas de Clases Particulares para garantizar que los alumnos alcancen sus objetivos. </p>
+        <p>* Concernant les 9 heures de cours par semaines, les étudiants sont libres de les répartir sur 3 jours (du lundi au vendredi)</p>
+        <p>** Le programme 25 Plus se composent de 25 heures de cours d’anglais « Générale » + 5 heures de cours particuliers </p>
 
       </div><!--general-content-->
 
@@ -904,14 +909,14 @@ console.log(dropdown);
               </tr>
             </table>
 
-            <p>* Los Cursos de 25 ACADEMIC se componen de 15 horas de inglés general + 10 horas de habilidades acádemicas.</p>
-            <p>** Los Cursos de 25 ACADEMIC PLUS se componen de 15 horas de inglés general + 10 horas de preparación para el examen + 5 horas de Clases  particulares para garantizar que los alumnos alcancen sus objetivos.</p>
+            <p>* Le programme 25 Académique se compose de 15 heures d’anglais générale + 10 heures de cours « académiques »</p>
+            <p>** Le programme 25 Académique Plus se compose de 15 heures d’anglais générale + 10 heures de préparation aux examens + 5 heures de cours particuliers</p>
 
       </div><!--academica-content-->
 
       <div class="tarifa individuales">
         <img src="img/numero3.png" alt="">
-        <button class="cdig"><span>Cursos de Inglés Individuales</span> <span>&#9654;</span></button>
+        <button class="cdig"><span>Cours d'Anglais Particuliers/individuels</span> <span>&#9654;</span></button>
       </div>
 
       <div class="individuales-content cursos-dropdown">
@@ -929,7 +934,7 @@ console.log(dropdown);
                 <th>8h</th>
               </tr>
               <tr>
-                <th>Clases Particulares de inglés para una persona</th>
+                <th>Cours particuliers pour une personne</th>
                 <td>£38</td>
                 <td>£76</td>
                 <td>£114</td>
@@ -949,50 +954,50 @@ console.log(dropdown);
 
       <div class="tarifa aloja">
         <img src="img/home2.png" alt="">
-        <button class="tda cdig"><span>TARIFAS DE ALOJAMIENTO</span> <span>&#9654;</span></button>
+        <button class="tda cdig"><span>PRIX LOGEMENT</span> <span>&#9654;</span></button>
       </div>
 
       <div class="aloja-content cursos-dropdown">
 
         <table>
           <tr class="table-head">
-            <th colspan="4">TARIFAS CASA COMPARTIDA</th>
-            <th colspan="4">TARIFAS RESIDENCIA DE ESTUDIANTES</th>
+            <th colspan="4">Prix des chambres en colocation</th>
+            <th colspan="4">Prix des chambres en résidence étudiante</th>
           </tr>
           <tr>
             <th></th>
-            <td class="edit"><img src="img/alojamiento-icon10.png" alt="">Habitación individual</td>
-            <td colspan="3"><strong>£115</strong> por semana</td>
-            <td><img src="img/alojamiento-icon10.png" alt="">Habitación individual</td>
-            <td><strong>£252</strong> por semana</td>
+            <td class="edit"><img src="img/alojamiento-icon10.png" alt="">Chambre individuelle</td>
+            <td colspan="3"><strong>£115</strong> par semaine</td>
+            <td><img src="img/alojamiento-icon10.png" alt="">Chambre individuelle</td>
+            <td><strong>£252</strong> par semaine</td>
           </tr>
           <tr>
             <th></th>
-            <td class="edit"><img src="img/alojamiento-icon11.png" alt="">*Habitación doble</td>
-            <td colspan="3"><strong>£115</strong> por semana</td>
-            <td class="edit"><img src="img/alojamiento-icon11.png" alt="">*Habitación doble</td>
-            <td><strong>£151</strong> por semana</td>
-          </tr>
-          <tr>
-            <th></th>
-            <td></td>
-            <td colspan="3"></td>
-            <td class="edit"><img src="img/alojamiento-icon12.png" alt="">Habitación triple LUX</td>
-            <td><strong>£164</strong> por semana</td>
+            <td class="edit"><img src="img/alojamiento-icon11.png" alt="">*Chambre à partager à 2</td>
+            <td colspan="3"><strong>£115</strong> par semaine</td>
+            <td class="edit"><img src="img/alojamiento-icon11.png" alt="">*Chambre à partager à 2</td>
+            <td><strong>£151</strong> par semaine</td>
           </tr>
           <tr>
             <th></th>
             <td></td>
             <td colspan="3"></td>
-            <td class="edit"><span class="number">4 </span> <img src="img/alojamiento-icon12.png" alt="">Habitación cuádruple</td>
-            <td><strong>£127</strong> por semana</td>
+            <td class="edit"><img src="img/alojamiento-icon12.png" alt="">Chambre triple LUX</td>
+            <td><strong>£164</strong> par semaine</td>
           </tr>
           <tr>
             <th></th>
-            <td class="add-info">* (camas separadas o literas)</td>
+            <td></td>
             <td colspan="3"></td>
-            <td class="edit"><span class="number">6 </span> <img src="img/alojamiento-icon12.png" alt="">Habitación séxtuple</td>
-            <td><strong>£114</strong> por semana</td>
+            <td class="edit"><span class="number">4 </span> <img src="img/alojamiento-icon12.png" alt="">Chambre quadruple</td>
+            <td><strong>£127</strong> par semaine</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td class="add-info">* (Il peut s’agir de 2 lits séparés ou bien d’un lits superposés)</td>
+            <td colspan="3"></td>
+            <td class="edit"><span class="number">6 </span> <img src="img/alojamiento-icon12.png" alt="">Chambre sextuple</td>
+            <td><strong>£114</strong> par semaine</td>
           </tr>
           <tr>
             <td colspan="7"></td>
@@ -1038,12 +1043,12 @@ console.log(dropdown);
         <img src="img/stock-photo-portrait-of-the-same-man-in-different-style-clothes-isolated-on-a-white-background-720748834.jpg" alt="">
 
         <div class="info-header">
-          <h1>¿QUE QUIERES <br/>HACER?</h1>
-          <p>¿Solicitar más información<br />o descargar catalogo?</p>
+          <h1>QUE SOUHAITEZ <br/>VOUS FAIRE ?</h1>
+          <p>Nous contacter ou <br />télécharger notre brochure?</p>
         </div>
 
-        <a href="#" class="btn-dark">MÁS INFORMACIÓN <span>&#9654;</span></a>
-        <a href="catalgo_trabajar_en_el_extranjero" class="btn-yellow">DESCARGA CATALOGO <span>&#9654;</span></a>
+        <a href="#" class="btn-dark">NOUS CONTACTER <span>&#9654;</span></a>
+        <a href="catalgo_trabajar_en_el_extranjero" class="btn-yellow">VOIR BROCHURE <span>&#9654;</span></a>
 
       </div><!--info-content-->
 
@@ -1100,41 +1105,36 @@ var tarifasCnt = document.querySelector('.tarifas');
           <h4>menu</h4>
           <ul class="nav">
               <li>
-                <a href="quienes-somos">
-                  quienes somos
+                <a href="qui_sommes_nous">
+                  A PROPOS DE NOUS
                 </a>
               </li>
               <li>
-                <a href="#">nuestros servicios</a>
+                <a href="#">NOS SERVICES</a>
               </li>
               <li>
-                <a href="trabajo_mas_alojamiento_en_londres">
-                       <span>&#9654;</span> TRABAJO + ALOJAMIENTO
+                <a href="Travail_et_logement_a_londres">
+                       <span>&#9654;</span> TRAVAIL + LOGEMENT A LONDRES
                 </a>
               </li>
               <li>
-                <a href="Cursos_de_Ingles_mas_alojamiento_en_londres">
-                  <span>&#9654;</span> CURSO + ALOJAMIENTO
+                <a href="cours_d'anglais_et_logement_londres">
+                  <span>&#9654;</span> COURS D’ANGLAIS + LOGEMENT A LONDRES
                 </a>
               </li>
               <li>
-                <a href="Trabajar_en_hoteles_en_Londres"><span>&#9654;</span> PROGRAMA DE HOTELES</a>
+                <a href="progamme_hotellerie_Londres"><span>&#9654;</span> TRAVAIL + LOGEMENT A LONDRES</a>
             </li>
               <li>
-                <a href="solicita_informacion">contacta con nosotros</a>
+                <a href="contactez_nous">NOUS CONTACTER</a>
               </li>
-              <li><a href="catalgo_trabajar_en_el_extranjero" class="orange">Descarga nuestro Catálogo</a>
+              <li><a href="telecharger_brochure" class="orange">TELECHARGER NOTRE BROCHURE</a>
                   </li>
                   
           </nav>
     
           <div class="about">
             <img src="img/logo-white.png" alt="" class="logo">
-    
-            <p>Con London Work Experience, te garantizamos con un servicio Premium y es por eso que trabajamos en colaboración con la cámara de comercio española</p>
-
-            <img src="img/scc_logo_smallwhite.png" alt="" class="chamber">
-            
           </div>
     
           <div class="facebook">
@@ -1149,5 +1149,6 @@ var tarifasCnt = document.querySelector('.tarifas');
 
     
 </footer>
+
   </body>
 </html>

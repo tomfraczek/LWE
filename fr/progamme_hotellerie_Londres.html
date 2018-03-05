@@ -29,12 +29,12 @@
           <div class="contact">
               <img src="img/auricular-phone-symbol-in-a-circle.png" alt="Trabaja en londres">
               <div>
-                <p>Tel&#233;fono gratuito <strong>900 831 750</strong></p>
+                <p>Téléphone gratuit <strong>900 831 750</strong></p>
               </div>
   
                 <img src="img/email.png" alt="Trabaja en londres">
               <div>
-                <p>Envianos un e-mail a: <strong><a href="mailto:info@londonworkexperience.com">info@londonworkexperience.com</a></strong></p>
+                <p>Contactez nous à: <strong><a href="mailto:info.fr@londonworkexperience.com">info.fr@londonworkexperience.com</a></strong></p>
             </div>
           </div>
          
@@ -44,19 +44,25 @@
         </div>
   
         <div class="right-head">
-          <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>zona cliente</strong></a>
+          <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>Zone Client</strong></a>
           <select name="language" id="language" class="language">
-            <option value="espanhol">ES</option>
-            <option value="italian">IT</option>
-            <option value="franch">FR</option>
+            <option value="#">FR</option>
+            <option value="http://www.londonworkexperience.com/">ES</option>
+            <option value="http://www.londonworkexperience.it/">IT</option>
           </select>
         </div>
+  
+        <script>
+          $("#language").change(function(){
+            document.location.href = $(this).val();
+          });
+        </script>
   
       </div><!-- upper-head -->
   
       <div class="lower-head">
         <div class="logo">
-          <a href="index"><img src="img/logo.png" alt="Trabaja en londres"></a>
+          <a href="fr/index"><img src="img/logo.png" alt="Trabaja en londres"></a>
           <div class="menu">
             <button type="button" class="menu-btn-sm">menu <i class="fas fa-bars"></i></button>
           </div>
@@ -67,38 +73,38 @@
   
           <ul class="nav">
       <li>
-        <a href="quienes-somos">
-          quienes somos
+        <a href="qui_sommes_nous">
+          A PROPOS DE NOUS
         </a>
       </li><li class="button-dropdown">
         <a href="#" class="dropdown-toggle">
-          nuestros servicios
+          NOS SERVICES
         </a>
         <ul class="dropdown-menu">
           <li>
-            <a class="drop" href="trabajo_mas_alojamiento_en_londres">
-                  TRABAJO + ALOJAMIENTO EN LONDRES
+            <a class="drop" href="Travail_et_logement_a_londres">
+              TRAVAIL + LOGEMENT A LONDRES
             </a>
             
           </li>
           <li>
-            <a class="drop" href="Cursos_de_Ingles_mas_alojamiento_en_londres">
-              CURSO + ALOJAMIENTO EN LONDRES
+            <a class="drop" href="cours_d'anglais_et_logement_londres">
+              COURS D’ANGLAIS + LOGEMENT A LONDRES
             </a>
           </li>
           <li>
-            <a class="drop" href="Trabajar_en_hoteles_en_Londres">
-              PROGRAMA DE HOTELES EN LONDRES
+            <a class="drop" href="progamme_hotellerie_Londres">
+              TRAVAILLER EN HOTELERIE A LONDRES
             </a>
           </li>
         </ul>
       </li><li>
         <a href="solicita_informacion">
-          contacta con nosotros
+          NOUS CONTACTER
         </a>
       </li><li>
-            <a href="catalgo_trabajar_en_el_extranjero" class="orange">
-              descarga nuestro catalogo
+            <a href="contactez_nous" class="orange">
+              TELECHARGER NOTRE BROCHURE
             </a>
           </li>
         </ul>
@@ -157,7 +163,6 @@
       return function(){
         var dropdown = document.querySelector('.nav');
         if (flag) {
-          var button = document.querySelector('.menu-btn-sm');
           flag = false;
           dropdown.style.display = 'unset';
           button.lastElementChild.classList.remove('fa-bars');
@@ -195,7 +200,7 @@
     <div class="ta-buttons">
 
       <div class="btn-wraper trabajo-btn">
-        <button class="under-btn active">DESCRIPCIÓN</button>
+        <button class="under-btn active">DESCRIPTION</button>
         <div class="under-bar ta-active"></div>
       </div>
 
@@ -243,13 +248,11 @@
 
       <div class="descripcion-left">
 
-        <h2><strong>Trabajo En Hoteles</strong></h2>
+        <h2><strong>Travailler en Hôtellerie</strong></h2>
 
         <img src="img/yellow-black-bar.png" alt="Trabajo en hoteles en Londres">
 
-        <p>Te permite adquirir experiencia laboral en Inglaterra además
-de mejorar tu nivel de inglés, proporcionándote un trabajo
-en alguno de nuestros hoteles colaboradores dentro o fuera de Londres.</p>
+        <p>Le programme « Hôtel » permet à nos clients de progresser rapidement en  anglais en plus de leur fournir une expérience formatrice au sein des meilleurs hôtels de Londres.</p>
 
       </div>
 
@@ -264,7 +267,7 @@ en alguno de nuestros hoteles colaboradores dentro o fuera de Londres.</p>
 
             <img src="img/check-yellow.png" alt="Trabajo en hoteles en Londres"><p>Etre ressortissant de l’UE</p>
             <img src="img/check-yellow.png" alt="Trabajo en hoteles en Londres"><p>Etre âgé entre 21 et 40 ans</p>
-            <img src="img/check-yellow.png" alt="Trabajo en hoteles en Londres"><p>Etre disponible pour un minimum de 3 mois.</p>
+            <img src="img/check-yellow.png" alt="Trabajo en hoteles en Londres"><p>Etre disponible pour une durée minimum de 3 mois</p>
             <img src="img/check-yellow.png" alt="Trabajo en hoteles en Londres"><p>Etre flexible concernant l’emplacement  des hôtels dans lesquels nous vous enverrons</p>
 
           </div>
@@ -312,7 +315,6 @@ en alguno de nuestros hoteles colaboradores dentro o fuera de Londres.</p>
 
         <p>Envoyez les documents à l’email suivant:</p>
         <a href="mailto:info.fr@londonworkexperience.com"><span><img src="img/envelope-black.png" alt="Trabajo en hoteles en Londres"><p>info.fr@londonworkexperience.com</p></span> <span>&#9654;</span></a>
-        <p>Si quieres saber más sobre los requisitos del programa, puedes rellenar una solicitud de información aquí sin compromiso.</p>
       </div>
 
       <div class="right">
@@ -321,8 +323,7 @@ en alguno de nuestros hoteles colaboradores dentro o fuera de Londres.</p>
         <span>&#9654;</span>
         <p>Photocopie du passeport</p>
         <span>&#9654;</span>
-        <p>Certificat médicale <br/>
-            Si vous souhaitez plus d’information n’hésitez pas à nous contacter</p>
+        <p>Certificat médicale</p>
       </div>
 
     </div>
@@ -515,41 +516,36 @@ var tarifasCnt = document.querySelector('.reservar');
           <h4>menu</h4>
           <ul class="nav">
               <li>
-                <a href="quienes-somos">
-                  quienes somos
+                <a href="qui_sommes_nous">
+                  A PROPOS DE NOUS
                 </a>
               </li>
               <li>
-                <a href="#">nuestros servicios</a>
+                <a href="#">NOS SERVICES</a>
               </li>
               <li>
-                <a href="trabajo_mas_alojamiento_en_londres">
-                       <span>&#9654;</span> TRABAJO + ALOJAMIENTO
+                <a href="Travail_et_logement_a_londres">
+                       <span>&#9654;</span> TRAVAIL + LOGEMENT A LONDRES
                 </a>
               </li>
               <li>
-                <a href="Cursos_de_Ingles_mas_alojamiento_en_londres">
-                  <span>&#9654;</span> CURSO + ALOJAMIENTO
+                <a href="cours_d'anglais_et_logement_londres">
+                  <span>&#9654;</span> COURS D’ANGLAIS + LOGEMENT A LONDRES
                 </a>
               </li>
               <li>
-                <a href="Trabajar_en_hoteles_en_Londres"><span>&#9654;</span> PROGRAMA DE HOTELES</a>
+                <a href="progamme_hotellerie_Londres"><span>&#9654;</span> TRAVAIL + LOGEMENT A LONDRES</a>
             </li>
               <li>
-                <a href="solicita_informacion">contacta con nosotros</a>
+                <a href="contactez_nous">NOUS CONTACTER</a>
               </li>
-              <li><a href="catalgo_trabajar_en_el_extranjero" class="orange">Descarga nuestro Catálogo</a>
+              <li><a href="telecharger_brochure" class="orange">TELECHARGER NOTRE BROCHURE</a>
                   </li>
                   
           </nav>
     
           <div class="about">
             <img src="img/logo-white.png" alt="" class="logo">
-    
-            <p>Con London Work Experience, te garantizamos con un servicio Premium y es por eso que trabajamos en colaboración con la cámara de comercio española</p>
-
-            <img src="img/scc_logo_smallwhite.png" alt="" class="chamber">
-            
           </div>
     
           <div class="facebook">
@@ -564,6 +560,7 @@ var tarifasCnt = document.querySelector('.reservar');
 
     
 </footer>
+
 
   </body>
 </html>
