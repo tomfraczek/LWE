@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="London Work Experience ayuda a espanoles a encontrar un trabajo y alojamiento en Londres. Los clientes pueden reservar aoljamiento antes de su llegada en Londres. Tambien les ofrecemos la posibilad de tomar clases de ingles o trabajar en hoteles en Londres">
+    <meta name=keywords content="trabaja en el extranjero,trabaja en londres, trabajo para espanoles">
+
+
+    <title>Trabaja Y Vive en Londres Con Nosotros | London Work Experience</title>
+
+
+    <!-- FONTAWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- jQuery -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+  <header>
+
+    <div class="upper-head">
+
+      <div class="left-head">
+        
+
+        <div class="contact">
+            <img src="img/auricular-phone-symbol-in-a-circle.png" alt="Trabaja en londres">
+            <div>
+              <p>Tel&#233;fono gratuito <strong>900 831 750</strong></p>
+            </div>
+
+              <img src="img/email.png" alt="Trabaja en londres">
+            <div>
+              <p>Envianos un e-mail a: <strong><a href="mailto:Info.it@londonworkexperience.com">Info.it@londonworkexperience.com</a></strong></p>
+          </div>
+        </div>
+       
+        <div class="social">
+          
+        </div>
+      </div>
+
+      <div class="right-head">
+        <a href="catalgo_trabajar_en_el_extranjero"><img src="img/users.png"> <strong>ZONA CLIENTE</strong></a>
+        <select name="language" id="language" class="language">
+          <option value="#">IT</option>
+          <option value="http://www.londonworkexperience.com/">ES</option>
+          <option value="http://www.londonworkfr.com/">FR</option>
+        </select>
+      </div>
+
+      <script>
+        $("#language").change(function(){
+          document.location.href = $(this).val();
+        });
+      </script>
+
+    </div><!-- upper-head -->
+
+    <div class="lower-head">
+      <div class="logo">
+        <a href="index"><img src="img/logo.png" alt="Trabaja en londres"></a>
+        <div class="menu">
+          <button type="button" class="menu-btn-sm">menu <i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+        
+
+
+
+        <ul class="nav">
+    <li>
+      <a href="quienes-somos">
+        CHI SIAMO
+      </a>
+    </li><li class="button-dropdown">
+      <a href="#" class="dropdown-toggle">
+        I NOSTRI SERVIZI
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="drop" href="trabajo_mas_alojamiento_en_londres">
+            CORSO + ALLOGGIO
+          </a>
+          
+        </li>
+        <li>
+          <a class="drop" href="Cursos_de_Ingles_mas_alojamiento_en_londres">
+            LAVORO + ALLOGGIO
+          </a>
+        </li>
+        <li>
+          <a class="drop" href="Trabajar_en_hoteles_en_Londres">
+            PROGRAMA DE HOTELES EN LONDRES
+          </a>
+        </li>
+      </ul>
+    </li><li>
+      <a href="solicita_informacion">
+        CONTATTCI
+      </a>
+    </li><li>
+          <a href="catalgo_trabajar_en_el_extranjero" class="orange">
+            SCARICA IL NOSTRO CATALOGO
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+    </div> <!-- lower head -->
+
+<!--dropdown menu scriptt-->
+    <script>
+      var mobileViewport = window.matchMedia("screen and (max-width: 600px)");
+      var btn = document.querySelector('.button-dropdown');
+      var dropdown = document.querySelector('.dropdown-menu');
+
+      if(mobileViewport.matches) {
+        var btn = document.querySelector('.button-dropdown');
+        var flag = true;
+
+        btn.addEventListener('click', function(flag){
+          return function(){
+            var dropdown = document.querySelector('.dropdown-menu');
+
+            if (flag) {
+              flag = false;
+              dropdown.classList.add('active');
+            }else {
+              flag = true;
+              dropdown.classList.remove('active');
+            }
+          }
+        }(true));
+      } else {
+        var btn = document.querySelector('.button-dropdown');
+        btn.addEventListener('mouseover', function(){
+
+            dropdown.classList.add('active');
+
+        });
+
+        btn.addEventListener('mouseout', function(){
+
+            dropdown.classList.remove('active');
+
+        });
+      };
+
+
+    </script>
+<!--hamburger menu script-->
+<script>
+
+  var button = document.querySelector('.menu-btn-sm');
+  var flag = true;
+
+  button.addEventListener('click', function(flag){
+    return function(){
+      var dropdown = document.querySelector('.nav');
+      if (flag) {
+        flag = false;
+        dropdown.style.display = 'unset';
+        button.lastElementChild.classList.remove('fa-bars');
+        button.lastElementChild.classList.add('fa-times-circle');
+      }else{
+        flag = true;
+        dropdown.style.display = 'none';
+        button.lastElementChild.classList.remove('fa-times-circle');
+        button.lastElementChild.classList.add('fa-bars');
+      }
+    }
+  }(true));
+
+</script>
+
+  </header>
+
+  <section class="one">
+
+
+    <div class="media">
+      <video id="home-video" src="Comp 4.mp4" autoplay cons loop="true" title="trabajar en londres ">
+      Sorry, your browser doesn't support embedded videos,
+      but don't worry, you can <a href="Comp 4.mp4">download it</a>
+      and watch it with your favorite video player!
+      </video>
+    </div>
+
+
+    <div class="main-picture home-page">
+
+
+      <div class="main-pic-header">
+        <div class="hp">
+          <h1>Ti piacerebbe venire e lavorare a Londra?</h1>
+          <p>Il Nostro programma ti aiuta a trovare un alloggio A Londra con un  lavoro nel settore della<br/>ristorazione in meno di 15 giorni, grazie alla nostra professionalita’ ed i nostri contatti.</p>  
+        </div>
+        <div class="main-pic-btns">
+          <a class="btn-one hp-btn" href="#">DOWNLOAD CATALOGO</a>
+          <a class="btn-two hp-btn" href="#">CHIEDI INFORMAZIONI</a>
+        </div>
+
+      </div> <!--main-pic-header-->
+
+    </div><!--main-picture-->
+
+    <div class="under-pic">
+    
+    </div>
+    
+
+  </section><!--one-->
+
+  <section class="services">
+
+    <div class="border-header">
+      <h1>I NOSTRI SERVIZI</h1>
+    </div>
+
+    <img src="img/services.png">
+
+    <div class="service-box">
+
+      <div class="bcg bcg1"></div>
+
+      <div class="box-bottom">
+        <span><h1>CORSO + ALLOGGIO</h1>
+        <img src="img/yellow-black-bar.png" alt="Cursos de ingles en Londres"></span>
+        <div class="overlay">
+            <p>Il Nostro programma ti aiuta a trovare un alloggio a Londra ed un  lavoro nel settore della ristorazione  in meno di 15 giorni, grazie alla nostra professionalita’ ed i nostri contatti.</p>
+        </div>
+                  <a href="Cursos_de_Ingles_mas_alojamiento_en_londres">MÁS INFORMACIÓN &#9654;</a>
+      </div>
+    </div>
+
+    <div class="service-box">
+
+      <div class="bcg bcg2"></div>
+
+      <div class="box-bottom">
+        <span><h1>LAVORO + ALLOGGIO A LONDRA</h1>
+        <img src="img/yellow-black-bar.png" alt="Trabajar en el extranjero"></span>
+        <div class="overlay">
+            <p>Il Nostro programma ti aiuta a trovare un alloggio a  Londra ed un  lavoro nel settore della ristorazione in meno di 15 giorni, grazie alla nostra professionalita’ ed i nostri contatti.</p>
+        </div>
+                  <a href="trabajo_mas_alojamiento_en_londres">MÁS INFORMACIÓN &#9654;</a>
+      </div>
+    </div>
+
+    <div class="service-box">
+
+      <div class="bcg bcg3"></div>
+
+      <div class="box-bottom">
+        <span><h1>programa de hoteles en londres</h1>
+        <img src="img/yellow-black-bar.png" alt="trabajar en hoteles Londres"></span>
+        <div class="overlay">
+            <p>Nuestro programa Trabaja en Hoteles te proporciona entrevistas para una posición en uno de nuestros Hoteles colaboradores dentro de Londres y alrededores. Tenemos una tasa de éxito del 95%. La asistencia para tu alojamiento está incluida.</p>
+        </div>
+                  <a href="Trabajar_en_hoteles_en_Londres">MÁS INFORMACIÓN &#9654;</a>
+      </div>
+    </div>
+
+    <script>
+
+    var box = document.getElementsByClassName('service-box');
+
+    for (var i = 0; i < box.length; i++) {
+      box[i].addEventListener('mouseover', function(){
+
+        var hover = this.querySelector('.box-bottom')
+        hover.classList.remove('box-bottom');
+        hover.classList.add('box-bottom-new');
+      });
+
+      box[i].addEventListener('mouseout', function(){
+
+        var hover = this.querySelector('.box-bottom-new');
+        hover.classList.remove('box-bottom-new');
+        hover.classList.add('box-bottom');
+      });
+    }
+
+    </script>
+
+  </section> <!--services-->
+
+
+  <section class="elegirnos">
+
+    <div class="border-header">
+      <h1>PERCHE’ SCEGLIERE NOI?</h1>
+    </div>
+
+    <img class="section-border" src="img/elegirnos.png">
+
+    <div class="elegirnos-container">
+
+      <div class="elegrinos-box box-one">
+
+        <div class="elegirnos-header">
+          <h2>LA MEGLIOR ESPERIENZA<br/>A LONDRA</h2>
+          <img src="img/black-bar.png" alt="Trabaja en londres">
+        </div>
+
+        <img src="img/home.png" alt="Trabaja en londreshome">
+        <div class="elegirnos-right">
+          <img src="img/yellow-bar.png" alt="Trabaja en londres">
+          <p>Alloggio garantito prima del tuo arrivo.</p>
+        </div>
+
+        <img src="img/cloud.png" alt="Trabaja en londrescloud">
+        <div class="elegirnos-right">
+          <img src="img/yellow-bar.png" alt="Trabaja en londres">
+          <p>Il nostro staff di lingua in italiana</p>
+        </div>
+
+        <img src="img/rocket.png" alt="Trabaja en londresrocket">
+        <div class="elegirnos-right">
+          <img src="img/yellow-bar.png" alt="Trabaja en londres">
+          <p>Ti aiutiamo dal primo giorno.</p>
+        </div>
+
+      </div>
+
+      <div class="elegrinos-box box-two">
+
+        <div class="elegirnos-header">
+          <h2>AGENTI ATTENTI ED<br/>EFFICACI</h2>
+          <img src="img/black-bar.png" alt="Trabaja en londres">
+        </div>
+
+        <img class="agent" src="img/stock-photo-portrait-of-the-same-man-in-different-style-clothes-isolated-on-a-white-background-720748834.jpg" alt="Trabaja en londreswoman picture">
+
+        <div class="two-box">
+            <h4 class="nome"><strong>Sergio Galdos</strong></h4>
+            <span class="tel">
+              <span><img src="img/phone-symbol-of-an-auricular-inside-a-circle.png" alt=""></i></span>
+            <strong>Tel gratuito: 900 831 750</strong>
+            </span>
+            
+            <span class="wup">
+              <span><img src="img/whatsapp.png" alt=""></span>
+              <strong> +34 626 284 526</strong>
+            </span>
+
+            <span class="mail">
+                <span><img src="img/email (1).png" alt=""></span>
+                <strong><a href="mailto:Info.it@londonworkexperience.com">Info.it@londonworkexperience.com</a></strong>
+            </span>
+                
+          </div>
+
+       </div>
+
+      <div class="elegirnos-box box-three">
+        <div class="elegirnos-header">
+          <h2>CLIENTI<br/>SODDISFATTI</h2>
+          <img src="img/black-bar.png" alt="Trabaja en londres">
+        </div>
+
+        <div class="elegirnos-box-content">
+          <h4>Iagoba</h4>
+          <img src="img/yellow-bar-sm.png" alt="Trabaja en londres">
+          <p>"Llegué el 14 de febrero y estoy encantado, todo muy facil. El personal de la agencia es excepcional y muy agradable. En menos de una semana ya tengo trabajo en un restaurante 2 estrellas muchelin, todo un lujo."</p>
+        </div>
+
+
+        <div class="elegirnos-box-content">
+          <h4>David</h4>
+          <img src="img/yellow-bar-sm.png" alt="Trabaja en londres">
+          <p>"Desde el primer momento te asesoran de lujo y despejan cualquier duda q tengas sobre cualquier cosa. Servicio muy fiable y recomendable al 100%!!"</p>
+        </div>
+
+
+        <div class="elegirnos-box-content">
+          <h4>Xabier</h4>
+          <img src="img/yellow-bar-sm.png" alt="Trabaja en londres">
+          <p>"El trato super agradable. Muy efectivo. Me han ayudado en todo. Invito a todos a que lo disfrutéis de la experiencia."</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <div class="upper">
+        <nav>
+            <h4>menu</h4>
+            <ul class="nav">
+                <li>
+                  <a href="quienes-somos">
+                    CHI SIAMO
+                  </a>
+                </li>
+                <li>
+                  <a href="#">I NOSTRI SERVIZI</a>
+                </li>
+                <li>
+                  <a href="trabajo_mas_alojamiento_en_londres">
+                         <span>&#9654;</span> CORSO + ALLOGGIO
+                  </a>
+                </li>
+                <li>
+                  <a href="Cursos_de_Ingles_mas_alojamiento_en_londres">
+                    <span>&#9654;</span> LAVORO + ALLOGGIO
+                  </a>
+                </li>
+                <li>
+                  <a href="Trabajar_en_hoteles_en_Londres"><span>&#9654;</span> PROGRAMA DE HOTELES</a>
+              </li>
+                <li>
+                  <a href="solicita_informacion">CONTATTCI</a>
+                </li>
+                <li><a href="catalgo_trabajar_en_el_extranjero" class="orange">SCARICA IL NOSTRO CATALOGO</a>
+                    </li>
+                    
+            </nav>
+      
+            <div class="about">
+              <img src="img/logo-white.png" alt="" class="logo">
+      
+              <p>Con London Work Experience, te garantizamos con un servicio Premium y es por eso que trabajamos en colaboración con la cámara de comercio española</p>
+
+              <img src="img/scc_logo_smallwhite.png" alt="" class="chamber">
+              
+            </div>
+      
+            <div class="facebook">
+              <h4>facebook</h4>
+                <iframe class="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flondonworkexperiencespain%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=2083873568515957" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+    </div>
+
+    <div class="lower">
+      <p>&copy;LondonWorkexperience Trabajo en Londres e Inglaterra 2018 Made by Tom Fraczek.</p>
+    </div>
+
+      
+  </footer>
+
+  </body>
+</html>
