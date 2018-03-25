@@ -1224,6 +1224,9 @@ header{
 }
 
 //END OF ELEGIRNOS
+footer .lower p a{
+  color: $btn-two;
+}
 
 footer{
   width: 100%;
@@ -5173,7 +5176,6 @@ footer{
     height: 150px;
   }
 }
-
 
   footer .upper .about{
     width: 90%;
